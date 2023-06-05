@@ -29,6 +29,18 @@ export default function MyApp(props: MyAppProps) {
                     name='viewport'
                     content='initial-scale=1, width=device-width'
                 />
+                <link rel='shortcut icon' href='/favicon.ico' />
+                <title>Психолог Лидия Сердюк.</title>
+                <meta
+                    name='description'
+                    content='Cамая важная встреча — это встреча с самим с собой'
+                />
+                <meta
+                    name='keywords'
+                    content='Психология психолог зпись на прием Лидия Сердюк '
+                />
+                <meta name='author' content='Lidiya Serduk' />
+                <meta name='emotion-insertion-point' content='' />
             </Head>
             <ThemeProvider theme={theme}>
                 <CssBaseline />

@@ -15,20 +15,7 @@ export default class MyDocument extends Document {
                         name='theme-color'
                         content={theme.palette.primary.main}
                     />
-                    <link rel='shortcut icon' href='/favicon.ico' />
-                    <title>
-                        Ксения Сухарева — Преподаватель иностранных языков.
-                    </title>
-                    <meta
-                        name='description'
-                        content='Ксения Сухарева. Со мной можно выучить английский, турецкий, французский и арабский языки. Также у меня можно пройти онлайн интенсив по турецкому языку и с нуля начать говорить на турецком.'
-                    />
-                    <meta
-                        name='keywords'
-                        content='english language, french language, arabic language, turkish language, английский язык, турецкий язык, арабский язык, французский язык, онлайн курс по турецкому языку, интенсив по турецкому, выучить английский, выучить вранцузский, выучить арабский, выучить турецкий, morkoovochka, преподаватель английского, английский для начинающих, турецкий для начинающих, арабский для начинающих, французский для начинающих'
-                    />
-                    <meta name='author' content='Ksenia Sukhareva' />
-                    <meta name='emotion-insertion-point' content='' />
+
                     {(this.props as any).emotionStyleTags}
                 </Head>
                 <body>
