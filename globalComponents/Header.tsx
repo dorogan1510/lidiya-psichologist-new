@@ -9,7 +9,7 @@ import MenuItem from '@mui/material/MenuItem'
 import Toolbar from '@mui/material/Toolbar'
 import * as React from 'react'
 import styles from './Header.module.scss'
-import { Stack } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 import TelegramIcon from '@mui/icons-material/Telegram'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 const pages = [
@@ -116,7 +116,6 @@ const Header = () => {
                         sx={{
                             display: { xs: 'none', md: 'flex' },
                             flexDirection: 'row',
-                            gap: '1rem',
                         }}
                     >
                         <IconButton
@@ -189,6 +188,7 @@ const Header = () => {
                                         sx={{
                                             textTransform: 'none',
                                             color: 'black',
+                                            fontSize: '16px',
                                         }}
                                     >
                                         {page.link}

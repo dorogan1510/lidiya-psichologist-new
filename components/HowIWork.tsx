@@ -7,7 +7,11 @@ import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility
 
 const Features2 = () => {
     return (
-        <Container id='id5' maxWidth='xl' sx={{ mb: '3rem' }}>
+        <Container
+            id='id5'
+            maxWidth='xl'
+            sx={{ mb: '3rem', scrollMarginTop: '80px' }}
+        >
             <Box sx={{ textAlign: 'center' }}>
                 <Typography variant='h4' gutterBottom>
                     Как я работаю

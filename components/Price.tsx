@@ -15,7 +15,11 @@ import { red } from '@mui/material/colors'
 
 const Price = () => {
     return (
-        <Container id='id6' maxWidth='xl' sx={{ mb: '3rem' }}>
+        <Container
+            id='id6'
+            maxWidth='xl'
+            sx={{ mb: '3rem', scrollMarginTop: '80px' }}
+        >
             <Box sx={{ textAlign: 'center' }}>
                 <Typography variant='h4' gutterBottom>
                     Оплата

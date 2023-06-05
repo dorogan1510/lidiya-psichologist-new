@@ -198,6 +198,7 @@ const Reviews = () => {
                 sx={{
                     mb: '3rem',
                     p: '1rem',
+                    scrollMarginTop: '80px',
                 }}
             >
                 <Typography variant='h4' sx={{ textAlign: 'center' }}>
