@@ -40,7 +40,6 @@ export default function MyApp(props: MyAppProps) {
                     content='Психология психолог зпись на прием Лидия Сердюк '
                 />
                 <meta name='author' content='Lidiya Serduk' />
-                <meta name='emotion-insertion-point' content='' />
             </Head>
             <ThemeProvider theme={theme}>
                 <CssBaseline />
