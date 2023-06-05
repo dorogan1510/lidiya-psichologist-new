@@ -218,7 +218,7 @@ const Reviews = () => {
                         height: 'fit-content',
                     }}
                 >
-                    <Carousel autoPlay={false} indicators={false}>
+                    <Carousel autoPlay={false}>
                         {reviwes.map(data => (
                             <Image
                                 src={data.img}

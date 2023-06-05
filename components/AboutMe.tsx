@@ -22,13 +22,12 @@ const HeroSectionImageRight = () => {
                     Обо мне
                 </Typography>
                 <Stack
-                    flexDirection={{ xs: 'column', md: 'row' }}
+                    flexDirection={{ xs: 'column', lg: 'row' }}
                     justifyContent='center'
-                    alignItems={{ xs: 'flex-start', sm: 'center' }}
                     gap='1rem'
                 >
                     <Box sx={{ maxWidth: '1110px', order: 2 }}>
-                        <Typography variant='body1' gutterBottom>
+                        <Typography variant='body1' sx={{ mb: '1.5rem' }}>
                             Для меня наиболее ценное в психотерапии то, что она
                             помогает понять и принять самого себя. Я убеждена,
                             что, сталкиваясь с различными испытаниями, мы можем
@@ -59,7 +58,13 @@ const HeroSectionImageRight = () => {
                             дальнейшего профессионального роста.
                         </Typography>
                     </Box>
-                    <Box sx={{ order: 1, maxWidth: '400px' }}>
+                    <Box
+                        sx={{
+                            order: 1,
+                            maxWidth: '400px',
+                            margin: '0 auto',
+                        }}
+                    >
                         <Image
                             src={img2}
                             alt={'image1'}
