@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
+    a {
+        text-decoration: none;
+        &:hover {
+            color: rgb(115, 115, 115);
+        }
+    }
+}
