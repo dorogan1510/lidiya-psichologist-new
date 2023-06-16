@@ -117,7 +117,7 @@ const Qualification = () => {
     ]
 
     return (
-        <Container id='id3' sx={{ scrollMarginTop: '80px' }} maxWidth='xl'>
+        <Container id='id5' sx={{ scrollMarginTop: '80px' }} maxWidth='xl'>
             <Typography variant='h4' textAlign='center' gutterBottom>
                 Моя квалификация
             </Typography>

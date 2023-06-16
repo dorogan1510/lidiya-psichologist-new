@@ -9,7 +9,11 @@ import img1 from '../public/img/cartoons/(1).jpg'
 import img2 from '../public/img/cartoons/(2).jpg'
 import img4 from '../public/img/cartoons/(4).jpg'
 const WithWhatIWork = () => (
-    <Container maxWidth='xl' sx={{ pl: { xs: '1rem', md: '3rem' } }}>
+    <Container
+        maxWidth='xl'
+        sx={{ pl: { xs: '1rem', md: '3rem' }, scrollMarginTop: '80px' }}
+        id='id1'
+    >
         <Typography variant='h4' gutterBottom sx={{ textAlign: 'center' }}>
             С чем я работаю
         </Typography>
