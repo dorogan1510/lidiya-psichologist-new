@@ -13,16 +13,18 @@ import HowIWork from '../components/HowIWork'
 import Price from '../components/Price'
 import CallToAction from '../components/CallToAction'
 import Footer1 from '../globalComponents/Footer1'
+import SecondBlock from '../components/SecondBlock'
 
 export default function Home() {
     return (
         <Box>
             <HeroSectionImageRight />
-            {/* <WithWhatIWork /> */}
+            <SecondBlock />
+            <WithWhatIWork />
             <AboutMe />
-            <Qualification />
-            <Reviews />
             <HowIWork />
+            <Reviews />
+            <Qualification />
             <Price />
             <CallToAction />
 

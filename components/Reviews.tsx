@@ -42,6 +42,8 @@ import img29 from '../public/img/reviews/(29).webp'
 import img30 from '../public/img/reviews/(30).webp'
 import img31 from '../public/img/reviews/(31).webp'
 import img32 from '../public/img/reviews/(32).webp'
+import img33 from '../public/img/reviews/(33).webp'
+import img34 from '../public/img/reviews/(34).webp'
 import Carousel from 'react-material-ui-carousel'
 
 const reviwes = [
@@ -173,6 +175,14 @@ const reviwes = [
         id: 32,
         img: img32,
     },
+    {
+        id: 33,
+        img: img33,
+    },
+    {
+        id: 34,
+        img: img34,
+    },
 ]
 
 const style = {
@@ -185,11 +195,6 @@ const style = {
 }
 
 const Reviews = () => {
-    const [open, setOpen] = useState<boolean>(false)
-    const handleClose = () => setOpen(false)
-
-    const [modalImg, setModalImg] = useState<any>(null)
-
     return (
         <Box sx={{ bgcolor: '#e4e4e4' }}>
             <Container
@@ -221,6 +226,7 @@ const Reviews = () => {
                     <Carousel autoPlay={false}>
                         {reviwes.map(data => (
                             <Image
+                                key={data.id}
                                 src={data.img}
                                 alt={'certificate'}
                                 loading='lazy'
@@ -233,40 +239,6 @@ const Reviews = () => {
                         ))}
                     </Carousel>
                 </Box>
-
-                {/* <Grid2
-                    container
-                    spacing={{ xs: 2, md: 3 }}
-                    columns={{ xs: 1, md: 5 }}
-                    justifyContent='center'
-                    className='animate-left'
-                    sx={{ mb: '1.5rem' }}
-                >
-                    {imgNames.map(data => (
-                        <Grid2
-                            key={data.id}
-                            sx={{ maxWidth: { xs: '150px', md: '250px' } }}
-                        >
-                            <Button
-                                onClick={() => {
-                                    setOpen(true)
-                                    setModalImg(data.img)
-                                }}
-                            >
-                                <Image
-                                    src={data.img}
-                                    alt={'img1'}
-                                    style={{
-                                        width: '100%',
-                                        height: 'auto',
-                                        borderRadius: '5px',
-                                    }}
-                                    loading='lazy'
-                                />
-                            </Button>
-                        </Grid2>
-                    ))}
-                </Grid2> */}
 
                 <Box
                     sx={{
@@ -284,33 +256,6 @@ const Reviews = () => {
                         Смотреть еще больше отзывов на профи ру
                     </Button>
                 </Box>
-
-                <Modal
-                    aria-labelledby='transition-modal-title'
-                    aria-describedby='transition-modal-description'
-                    open={open}
-                    onClose={handleClose}
-                    closeAfterTransition
-                    BackdropComponent={Backdrop}
-                    BackdropProps={{
-                        timeout: 500,
-                    }}
-                >
-                    <Fade in={open}>
-                        <Box sx={style}>
-                            <Image
-                                src={modalImg}
-                                alt={'img'}
-                                loading='lazy'
-                                style={{
-                                    width: '100%',
-                                    height: 'auto',
-                                    borderRadius: '5px',
-                                }}
-                            />
-                        </Box>
-                    </Fade>
-                </Modal>
             </Container>
         </Box>
     )

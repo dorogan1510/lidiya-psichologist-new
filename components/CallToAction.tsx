@@ -54,6 +54,7 @@ const CallToAction = () => {
                         flexDirection={'row'}
                         alignItems={'center'}
                         gap='1rem'
+                        mb='1.5rem'
                     >
                         <Typography variant='h6'>
                             <Link
@@ -67,6 +68,16 @@ const CallToAction = () => {
                             </Link>
                         </Typography>
                     </Stack>
+
+                    <Typography
+                        variant='h4'
+                        sx={{
+                            textAlign: { xs: 'center', md: 'left' },
+                        }}
+                        className={handwriteFont.className}
+                    >
+                        Не оставайтесь одни в трудные времена
+                    </Typography>
                 </Stack>
             </Container>
         </Box>
