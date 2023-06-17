@@ -29,7 +29,7 @@ const Contacts = () => {
                         justifyContent: 'center',
                         alignItems: 'center',
                         gap: { xs: '1.5rem', md: '3rem' },
-                        mb: { xs: '3rem', md: 0 },
+                        mb: { xs: '3rem', md: '3rem' },
                     }}
                 >
                     <Box sx={{ maxWidth: '300px' }}>

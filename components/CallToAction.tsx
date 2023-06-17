@@ -58,13 +58,13 @@ const CallToAction = () => {
                     >
                         <Typography variant='h6'>
                             <Link
-                                href={'mailto:mrsla2010@gmail.com'}
+                                href={'mailto:serdiuk.l1970@gmail.com'}
                                 sx={{
                                     color: 'black',
                                     textDecoration: 'underline',
                                 }}
                             >
-                                mrsla2010@gmail.com
+                                serdiuk.l1970@gmail.com
                             </Link>
                         </Typography>
                     </Stack>
