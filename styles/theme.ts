@@ -1,6 +1,6 @@
 import { red } from '@mui/material/colors'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
-import { Caveat, Source_Sans_Pro } from '@next/font/google'
+import { Bad_Script, Source_Sans_Pro } from '@next/font/google'
 
 export const roboto = Source_Sans_Pro({
     weight: ['300', '400', '600', '700'],
@@ -9,7 +9,7 @@ export const roboto = Source_Sans_Pro({
     fallback: ['Helvetica', 'Arial', 'sans-serif'],
 })
 
-export const handwriteFont = Caveat({
+export const handwriteFont = Bad_Script({
     weight: ['400'],
     subsets: ['cyrillic'],
     display: 'swap',

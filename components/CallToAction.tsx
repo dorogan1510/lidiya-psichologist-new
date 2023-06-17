@@ -59,7 +59,7 @@ const CallToAction = () => {
                     </Stack>
 
                     <Typography
-                        variant='h3'
+                        variant='h4'
                         sx={{
                             textAlign: { xs: 'center', md: 'left' },
                         }}

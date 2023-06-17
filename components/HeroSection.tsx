@@ -36,7 +36,7 @@ const HeroSection = () => {
                             Психолог <br className={style.brTag} /> Лидия Сердюк
                         </Typography>
                         <Typography
-                            variant='h3'
+                            variant='h4'
                             sx={{
                                 mb: '3rem',
                                 textAlign: { xs: 'center', md: 'left' },
