@@ -1,14 +1,12 @@
-import * as React from 'react'
-import Head from 'next/head'
-import { AppProps } from 'next/app'
-import { ThemeProvider } from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline'
 import { CacheProvider, EmotionCache } from '@emotion/react'
-import theme from '../styles/theme'
+import CssBaseline from '@mui/material/CssBaseline'
+import { ThemeProvider } from '@mui/material/styles'
+import { AppProps } from 'next/app'
+import Head from 'next/head'
+import Header from '../globalComponents/Header'
 import createEmotionCache from '../src/createEmotionCache'
 import '../styles/globals.scss'
-import Header from '../globalComponents/Header'
-import Footer from '../globalComponents/Footer1'
+import theme from '../styles/theme'
 
 const clientSideEmotionCache = createEmotionCache()
 
@@ -30,7 +28,7 @@ export default function MyApp(props: MyAppProps) {
                     content='initial-scale=1, width=device-width'
                 />
                 <link rel='shortcut icon' href='/favicon.ico' />
-                <title>Психолог Лидия Сердюк.</title>
+                <title>Психолог Лидия Сердюк</title>
                 <meta
                     name='description'
                     content='Cамая важная встреча — это встреча с самим с собой'
