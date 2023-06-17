@@ -14,6 +14,7 @@ import Price from '../components/Price'
 import CallToAction from '../components/CallToAction'
 import Footer1 from '../globalComponents/Footer1'
 import SecondBlock from '../components/SecondBlock'
+import Contacts from '../components/Contacts'
 
 export default function Home() {
     return (
@@ -25,6 +26,7 @@ export default function Home() {
             <HowIWork />
             <Reviews />
             <Qualification />
+            <Contacts />
             <Price />
             <CallToAction />
 

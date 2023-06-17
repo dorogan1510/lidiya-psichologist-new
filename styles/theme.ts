@@ -1,4 +1,10 @@
-import { Raleway, Roboto, Bad_Script, Source_Sans_Pro } from '@next/font/google'
+import {
+    Raleway,
+    Roboto,
+    Bad_Script,
+    Source_Sans_Pro,
+    Caveat,
+} from '@next/font/google'
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import { red } from '@mui/material/colors'
 
@@ -9,7 +15,7 @@ export const roboto = Source_Sans_Pro({
     fallback: ['Helvetica', 'Arial', 'sans-serif'],
 })
 
-export const handwriteFont = Bad_Script({
+export const handwriteFont = Caveat({
     weight: ['400'],
     subsets: ['cyrillic'],
     display: 'swap',

@@ -16,7 +16,7 @@ import { red } from '@mui/material/colors'
 const Price = () => {
     return (
         <Container
-            id='id6'
+            id='id7'
             maxWidth='xl'
             sx={{ mb: '3rem', scrollMarginTop: '80px' }}
         >
@@ -82,7 +82,7 @@ const Price = () => {
                             >
                                 <Button
                                     variant='contained'
-                                    href='https://wa.me/79119042677?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%BD%D0%B0%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E.'
+                                    href='https://wa.me/79119042677?text='
                                     target='_blank'
                                 >
                                     Запись на сеанс
@@ -120,7 +120,7 @@ const Price = () => {
                             >
                                 <Button
                                     variant='contained'
-                                    href='https://wa.me/79119042677?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%BD%D0%B0%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E.'
+                                    href='https://wa.me/79119042677?text='
                                     target='_blank'
                                 >
                                     Запись на сеанс
@@ -129,7 +129,7 @@ const Price = () => {
                         </Card>
                     </Stack>
                 </Box>
-                <Box>
+                {/* <Box>
                     <Typography
                         variant='h5'
                         sx={{ textAlign: 'center' }}
@@ -184,7 +184,7 @@ const Price = () => {
                             </CardActions>
                         </Card>
                     </Stack>
-                </Box>
+                </Box> */}
             </Stack>
         </Container>
     )

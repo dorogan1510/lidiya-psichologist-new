@@ -253,7 +253,7 @@ const Reviews = () => {
                         href='https://spb.profi.ru/profile/SerdyukLA/#reviews-tab'
                         target='_blank'
                     >
-                        Смотреть еще больше отзывов на профи ру
+                        Больше отзывов на профи.ру
                     </Button>
                 </Box>
             </Container>

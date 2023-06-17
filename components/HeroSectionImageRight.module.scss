@@ -4,8 +4,16 @@
     border-radius: 20px;
 }
 
+.brTag {
+    display: none;
+}
+
 @media (max-width: 1024px) {
     .image {
         max-width: 400px;
+    }
+
+    .brTag {
+        display: block;
     }
 }

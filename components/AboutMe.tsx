@@ -8,11 +8,19 @@ import { handwriteFont } from '../styles/theme'
 
 const HeroSectionImageRight = () => {
     return (
-        <Box sx={{ bgcolor: '#e4e4e4' }}>
+        <Box
+            sx={{
+                bgcolor: '#e4e4e4',
+            }}
+        >
             <Container
                 id='id2'
                 maxWidth='xl'
-                sx={{ mb: '3rem', pt: '3rem', scrollMarginTop: '60px' }}
+                sx={{
+                    mb: '3rem',
+                    pt: '3rem',
+                    scrollMarginTop: '60px',
+                }}
             >
                 <Typography
                     variant='h4'
@@ -24,10 +32,11 @@ const HeroSectionImageRight = () => {
                 <Stack
                     flexDirection={{ xs: 'column', lg: 'row' }}
                     justifyContent='center'
+                    alignItems='flex-end'
                     gap='1rem'
                 >
-                    <Box sx={{ maxWidth: '1110px', order: 2 }}>
-                        <Typography variant='body1' sx={{ mb: '1.5rem' }}>
+                    <Box sx={{ maxWidth: '1000px', order: 2 }}>
+                        <Typography variant='h6' sx={{ mb: '1.5rem' }}>
                             Мой путь в психологию начался с поисков возможностей
                             улучшить качество собственной жизни. По своей первой
                             специальности я филолог-германист, переводчик и

@@ -113,7 +113,7 @@ const Features2 = () => {
                         долгосрочной терапии.
                     </Typography>
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                {/* <Grid item xs={12} sm={4}>
                     <Box color={'secondary.main'}>
                         <PublicIcon
                             style={{
@@ -129,7 +129,7 @@ const Features2 = () => {
                         консультаций. Я работаю в Skype, Zoom, WhatsApp и
                         Telegram в видеоформате.
                     </Typography>
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12} sm={12}>
                     <Typography
                         variant='h4'
@@ -138,7 +138,7 @@ const Features2 = () => {
                     >
                         В каком направлении психотерапии я работаю
                     </Typography>
-                    <Typography variant='body1'>
+                    <Typography variant='h6'>
                         В современной психотерапии существуют несколько базовых
                         направлений, каждое из которых имеет свою историю,
                         научное обоснование и методологические разработки. В

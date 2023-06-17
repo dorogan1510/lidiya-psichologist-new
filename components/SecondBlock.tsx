@@ -3,8 +3,19 @@ import React from 'react'
 
 const SecondBlock = () => {
     return (
-        <Container maxWidth='xl'>
-            <Box sx={{ py: '3rem' }}>
+        <Container maxWidth='xl' sx={{ mb: '3rem' }}>
+            <Typography variant='h4' gutterBottom sx={{ textAlign: 'center' }}>
+                Что для меня психология
+            </Typography>
+
+            <Box
+                sx={{
+                    borderLeft: '2px solid black',
+                    pl: '1rem',
+                    maxWidth: '1000px',
+                    m: ' 0 auto',
+                }}
+            >
                 <Typography variant='h6' gutterBottom>
                     Для меня наиболее ценное в психологии то, что она помогает
                     понять и принять самого себя. Я убеждена, что, сталкиваясь с
