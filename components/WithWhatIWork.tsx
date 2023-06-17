@@ -57,15 +57,14 @@ const WithWhatIWork = () => (
                     &#8226; Непринятие своей внешности;
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Переживания сложных чувств - стыда, вины, обиды,
+                    &#8226; Переживания сложных чувств — стыда, вины, обиды,
                     гнева;
                 </Typography>
+
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Потеря контроля над своими эмоциями;
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Эмоциональные проблемы - страхи, тревога, апатия,
-                    перепады настроения, подавленность, психосоматика;
+                    &#8226; Эмоциональные проблемы — тревога, апатия, перепады
+                    настроения, подавленность, психосоматика, страхи, панические
+                    атаки;
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Переживания, связанные с травматичными событиями в
@@ -86,7 +85,12 @@ const WithWhatIWork = () => (
                 </Typography>
             </Box>
         </Stack>
-        <Typography variant='h5' gutterBottom sx={{ textAlign: 'center' }}>
+        <hr />
+        <Typography
+            variant='h5'
+            gutterBottom
+            sx={{ textAlign: 'center', mt: '3rem' }}
+        >
             Личностное развитие и самооценка
         </Typography>
         <Stack
@@ -152,7 +156,12 @@ const WithWhatIWork = () => (
                 </Typography>
             </Box>
         </Stack>
-        <Typography variant='h5' gutterBottom sx={{ textAlign: 'center' }}>
+        <hr />
+        <Typography
+            variant='h5'
+            gutterBottom
+            sx={{ textAlign: 'center', mt: '3rem' }}
+        >
             Трудности в отношениях с другими
         </Typography>
         <Stack
