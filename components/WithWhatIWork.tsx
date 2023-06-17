@@ -14,10 +14,16 @@ const WithWhatIWork = () => (
         sx={{ pl: { xs: '1rem', md: '3rem' }, scrollMarginTop: '80px' }}
         id='id1'
     >
-        <Typography variant='h4' sx={{ textAlign: 'center', mb: '1.5rem' }}>
+        <Typography
+            variant='h4'
+            sx={{ textAlign: 'center', mb: '1.5rem', fontWeight: '600' }}
+        >
             С чем я работаю
         </Typography>
-        <Typography variant='h5' gutterBottom sx={{ textAlign: 'center' }}>
+        <Typography
+            variant='h5'
+            sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
+        >
             Сложности в отношениях с самим собой
         </Typography>
         <Stack
@@ -85,11 +91,10 @@ const WithWhatIWork = () => (
                 </Typography>
             </Box>
         </Stack>
-        <hr />
+
         <Typography
             variant='h5'
-            gutterBottom
-            sx={{ textAlign: 'center', mt: '3rem' }}
+            sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
         >
             Личностное развитие и самооценка
         </Typography>
@@ -156,11 +161,10 @@ const WithWhatIWork = () => (
                 </Typography>
             </Box>
         </Stack>
-        <hr />
+
         <Typography
             variant='h5'
-            gutterBottom
-            sx={{ textAlign: 'center', mt: '3rem' }}
+            sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
         >
             Трудности в отношениях с другими
         </Typography>

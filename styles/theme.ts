@@ -9,7 +9,7 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import { red } from '@mui/material/colors'
 
 export const roboto = Source_Sans_Pro({
-    weight: ['300', '400', '700'],
+    weight: ['300', '400', '600', '700'],
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
     fallback: ['Helvetica', 'Arial', 'sans-serif'],

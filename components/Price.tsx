@@ -21,7 +21,11 @@ const Price = () => {
             sx={{ mb: '3rem', scrollMarginTop: '80px' }}
         >
             <Box sx={{ textAlign: 'center' }}>
-                <Typography variant='h4' gutterBottom>
+                <Typography
+                    variant='h4'
+                    gutterBottom
+                    sx={{ fontWeight: '600' }}
+                >
                     Оплата
                 </Typography>
                 <Typography variant='h6' mb='1.5rem'>

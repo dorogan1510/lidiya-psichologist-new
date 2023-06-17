@@ -17,7 +17,11 @@ const Features2 = () => {
             sx={{ mb: '3rem', scrollMarginTop: '80px' }}
         >
             <Box sx={{ textAlign: 'center' }}>
-                <Typography variant='h4' gutterBottom>
+                <Typography
+                    variant='h4'
+                    gutterBottom
+                    sx={{ fontWeight: '600' }}
+                >
                     Как я работаю
                 </Typography>
             </Box>
@@ -134,7 +138,7 @@ const Features2 = () => {
                     <Typography
                         variant='h4'
                         gutterBottom
-                        sx={{ textAlign: 'center' }}
+                        sx={{ textAlign: 'center', fontWeight: '600' }}
                     >
                         В каком направлении психотерапии я работаю
                     </Typography>

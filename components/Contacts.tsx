@@ -11,7 +11,11 @@ const Contacts = () => {
             id='id6'
             sx={{ mb: '3rem', scrollMarginTop: '80px' }}
         >
-            <Typography variant='h4' gutterBottom sx={{ textAlign: 'center' }}>
+            <Typography
+                variant='h4'
+                gutterBottom
+                sx={{ textAlign: 'center', fontWeight: '600' }}
+            >
                 Контакты
             </Typography>
             <Box

@@ -4,7 +4,11 @@ import React from 'react'
 const SecondBlock = () => {
     return (
         <Container maxWidth='xl' sx={{ mb: '3rem' }}>
-            <Typography variant='h4' gutterBottom sx={{ textAlign: 'center' }}>
+            <Typography
+                variant='h4'
+                gutterBottom
+                sx={{ textAlign: 'center', fontWeight: '600' }}
+            >
                 Что для меня психология
             </Typography>
 

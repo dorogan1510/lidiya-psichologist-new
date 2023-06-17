@@ -25,7 +25,7 @@ const HeroSectionImageRight = () => {
                 <Typography
                     variant='h4'
                     gutterBottom
-                    sx={{ textAlign: 'center' }}
+                    sx={{ textAlign: 'center', fontWeight: '600' }}
                 >
                     Обо мне
                 </Typography>

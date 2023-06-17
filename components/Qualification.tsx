@@ -21,6 +21,7 @@ import img17 from '../public/img/certificates/img(8).webp'
 import img18 from '../public/img/certificates/img(9).webp'
 import Image from 'next/image'
 import Carousel from 'react-material-ui-carousel'
+import Link from 'next/link'
 
 const Qualification = () => {
     const certificates = [
@@ -118,7 +119,12 @@ const Qualification = () => {
 
     return (
         <Container id='id5' sx={{ scrollMarginTop: '80px' }} maxWidth='xl'>
-            <Typography variant='h4' textAlign='center' gutterBottom>
+            <Typography
+                variant='h4'
+                textAlign='center'
+                gutterBottom
+                sx={{ fontWeight: '600' }}
+            >
                 Моя квалификация
             </Typography>
 

@@ -206,7 +206,10 @@ const Reviews = () => {
                     scrollMarginTop: '80px',
                 }}
             >
-                <Typography variant='h4' sx={{ textAlign: 'center' }}>
+                <Typography
+                    variant='h4'
+                    sx={{ textAlign: 'center', fontWeight: '600' }}
+                >
                     Мои отзывы
                 </Typography>
                 <Typography
