@@ -1,6 +1,6 @@
-import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material'
-import React from 'react'
-import { handwriteFont } from '../styles/theme'
+import { Box, Container, Typography } from '@mui/material'
+import Image from 'next/image'
+import Carousel from 'react-material-ui-carousel'
 import img1 from '../public/img/certificates/1.webp'
 import img2 from '../public/img/certificates/2.webp'
 import img3 from '../public/img/certificates/3.webp'
@@ -19,9 +19,6 @@ import img15 from '../public/img/certificates/img(6).webp'
 import img16 from '../public/img/certificates/img(7).webp'
 import img17 from '../public/img/certificates/img(8).webp'
 import img18 from '../public/img/certificates/img(9).webp'
-import Image from 'next/image'
-import Carousel from 'react-material-ui-carousel'
-import Link from 'next/link'
 
 const Qualification = () => {
     const certificates = [

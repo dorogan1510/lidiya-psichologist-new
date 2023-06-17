@@ -1,8 +1,7 @@
 import { Box, Container, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
-import React from 'react'
-import img9 from '../public/img/cartoons/(9).jpg'
 import img8 from '../public/img/cartoons/(8).jpg'
+import img9 from '../public/img/cartoons/(9).jpg'
 
 const Contacts = () => {
     return (
@@ -47,9 +46,9 @@ const Contacts = () => {
                             можем получить качественную психологическую помощь
                             онлайн. Я консультирую клиентов онлайн с начала 2019
                             года. По моему опыту, это не только очень удобный
-                            формат, так как он позволяет экономить время и
-                            доступен в любой точке мира, но и не менее
-                            эффективный, чем классический.
+                            формат, который позволяет экономить время и доступен
+                            в любой точке мира, но и не менее эффективный в
+                            сравнении с классическим.
                         </Typography>
                     </Box>
                 </Stack>

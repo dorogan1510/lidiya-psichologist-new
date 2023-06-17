@@ -1,6 +1,5 @@
 import { Container, Stack, Typography } from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
-import Image from 'next/image'
 import Link from 'next/link'
 import style from './Footer1.module.scss'
 

@@ -1,13 +1,10 @@
-import AccessAlarmIcon from '@mui/icons-material/AccessAlarm'
 import { Box, Container, Grid, Typography } from '@mui/material'
 
-import AutoGraphIcon from '@mui/icons-material/AutoGraph'
-import AltRouteIcon from '@mui/icons-material/AltRoute'
-import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility'
-import PublicIcon from '@mui/icons-material/Public'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import AutoGraphIcon from '@mui/icons-material/AutoGraph'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
 import SearchIcon from '@mui/icons-material/Search'
+import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility'
 
 const Features2 = () => {
     return (
@@ -117,23 +114,6 @@ const Features2 = () => {
                         долгосрочной терапии.
                     </Typography>
                 </Grid>
-                {/* <Grid item xs={12} sm={4}>
-                    <Box color={'secondary.main'}>
-                        <PublicIcon
-                            style={{
-                                width: '30px',
-                                height: '30px',
-                                marginBottom: '1rem',
-                                color: 'primary.main',
-                            }}
-                        />
-                    </Box>
-                    <Typography variant='h6'>
-                        Вы можете выбрать удобную для Вас платформу для онлайн
-                        консультаций. Я работаю в Skype, Zoom, WhatsApp и
-                        Telegram в видеоформате.
-                    </Typography>
-                </Grid> */}
                 <Grid item xs={12} sm={12}>
                     <Typography
                         variant='h4'

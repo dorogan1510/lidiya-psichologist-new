@@ -1,24 +1,7 @@
-import {
-    Backdrop,
-    Box,
-    Button,
-    Container,
-    Fade,
-    Modal,
-    Typography,
-} from '@mui/material'
-import Grid2 from '@mui/material/Unstable_Grid2'
+import { Box, Button, Container, Typography } from '@mui/material'
 import Image from 'next/image'
-import { useState } from 'react'
+import Carousel from 'react-material-ui-carousel'
 import img1 from '../public/img/reviews/(1).webp'
-import img2 from '../public/img/reviews/(2).webp'
-import img3 from '../public/img/reviews/(3).webp'
-import img4 from '../public/img/reviews/(4).webp'
-import img5 from '../public/img/reviews/(5).webp'
-import img6 from '../public/img/reviews/(6).webp'
-import img7 from '../public/img/reviews/(7).webp'
-import img8 from '../public/img/reviews/(8).webp'
-import img9 from '../public/img/reviews/(9).webp'
 import img10 from '../public/img/reviews/(10).webp'
 import img11 from '../public/img/reviews/(11).webp'
 import img12 from '../public/img/reviews/(12).webp'
@@ -29,6 +12,7 @@ import img16 from '../public/img/reviews/(16).webp'
 import img17 from '../public/img/reviews/(17).webp'
 import img18 from '../public/img/reviews/(18).webp'
 import img19 from '../public/img/reviews/(19).webp'
+import img2 from '../public/img/reviews/(2).webp'
 import img20 from '../public/img/reviews/(20).webp'
 import img21 from '../public/img/reviews/(21).webp'
 import img22 from '../public/img/reviews/(22).webp'
@@ -39,12 +23,18 @@ import img26 from '../public/img/reviews/(26).webp'
 import img27 from '../public/img/reviews/(27).webp'
 import img28 from '../public/img/reviews/(28).webp'
 import img29 from '../public/img/reviews/(29).webp'
+import img3 from '../public/img/reviews/(3).webp'
 import img30 from '../public/img/reviews/(30).webp'
 import img31 from '../public/img/reviews/(31).webp'
 import img32 from '../public/img/reviews/(32).webp'
 import img33 from '../public/img/reviews/(33).webp'
 import img34 from '../public/img/reviews/(34).webp'
-import Carousel from 'react-material-ui-carousel'
+import img4 from '../public/img/reviews/(4).webp'
+import img5 from '../public/img/reviews/(5).webp'
+import img6 from '../public/img/reviews/(6).webp'
+import img7 from '../public/img/reviews/(7).webp'
+import img8 from '../public/img/reviews/(8).webp'
+import img9 from '../public/img/reviews/(9).webp'
 
 const reviwes = [
     {

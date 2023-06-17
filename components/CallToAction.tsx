@@ -1,19 +1,8 @@
-import {
-    Box,
-    Button,
-    Container,
-    IconButton,
-    Stack,
-    Typography,
-} from '@mui/material'
-import React from 'react'
-import Image from 'next/image'
 import TelegramIcon from '@mui/icons-material/Telegram'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
-import EmailIcon from '@mui/icons-material/Email'
-import { handwriteFont } from '../styles/theme'
-import img1 from '../public/img/4.jpg'
+import { Box, Container, IconButton, Stack, Typography } from '@mui/material'
 import Link from '../src/Link'
+import { handwriteFont } from '../styles/theme'
 
 const CallToAction = () => {
     return (
@@ -76,7 +65,7 @@ const CallToAction = () => {
                         }}
                         className={handwriteFont.className}
                     >
-                        Не оставайтесь одни в трудные времена
+                        Не оставайтесь одни в трудные времена!
                     </Typography>
                 </Stack>
             </Container>

@@ -1,12 +1,6 @@
-import {
-    Raleway,
-    Roboto,
-    Bad_Script,
-    Source_Sans_Pro,
-    Caveat,
-} from '@next/font/google'
-import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import { red } from '@mui/material/colors'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
+import { Caveat, Source_Sans_Pro } from '@next/font/google'
 
 export const roboto = Source_Sans_Pro({
     weight: ['300', '400', '600', '700'],

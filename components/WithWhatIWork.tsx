@@ -1,13 +1,8 @@
-import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material'
-import React from 'react'
-import { handwriteFont } from '../styles/theme'
+import { Box, Container, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
-import img6 from '../public/img/cartoons/(6).jpg'
-import img7 from '../public/img/cartoons/(7).jpg'
 import img10 from '../public/img/cartoons/(10).jpg'
-import img1 from '../public/img/cartoons/(1).jpg'
 import img2 from '../public/img/cartoons/(2).jpg'
-import img4 from '../public/img/cartoons/(4).jpg'
+import img6 from '../public/img/cartoons/(6).jpg'
 const WithWhatIWork = () => (
     <Container
         maxWidth='xl'

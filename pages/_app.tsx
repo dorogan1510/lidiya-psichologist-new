@@ -37,7 +37,7 @@ export default function MyApp(props: MyAppProps) {
                 />
                 <meta
                     name='keywords'
-                    content='Психология психолог зпись на прием Лидия Сердюк '
+                    content='Психология психолог запись на прием Лидия Сердюк онлайн спб Санкт-Петербург'
                 />
                 <meta name='author' content='Lidiya Serduk' />
             </Head>

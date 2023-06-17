@@ -1,10 +1,7 @@
-import { Button, Container, Stack, Typography } from '@mui/material'
+import { Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import Balancer from 'react-wrap-balancer'
 import img2 from '../public/img/2.webp'
-import styles from './HeroSectionImageRight.module.scss'
-import { handwriteFont } from '../styles/theme'
 
 const HeroSectionImageRight = () => {
     return (

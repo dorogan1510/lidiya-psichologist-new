@@ -1,12 +1,11 @@
 import { Button, Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import Balancer from 'react-wrap-balancer'
 import img1 from '../public/img/3.webp'
 import { handwriteFont } from '../styles/theme'
-import style from './HeroSectionImageRight.module.scss'
+import style from './HeroSection.module.scss'
 
-const HeroSectionImageRight = () => {
+const HeroSection = () => {
     return (
         <Box sx={{ bgcolor: '#b8d8f3', mb: '3rem' }}>
             <Container
@@ -84,4 +83,4 @@ const HeroSectionImageRight = () => {
     )
 }
 
-export default HeroSectionImageRight
+export default HeroSection
