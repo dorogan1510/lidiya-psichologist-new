@@ -12,7 +12,7 @@ const HeroSection = () => {
                 maxWidth='xl'
                 sx={{
                     pl: { xs: '1rem', md: '3rem' },
-                    height: { xs: 'auto', md: '80vh' },
+                    height: { xs: 'auto', md: '600px' },
                     position: 'relative',
                 }}
             >
@@ -23,8 +23,11 @@ const HeroSection = () => {
                     gap='1rem'
                     sx={{
                         pt: { xs: '3rem', md: '0' },
+                        px: { xs: 0, md: '3rem' },
                         position: { xs: 'static', md: 'absolute' },
                         bottom: 0,
+                        left: 0,
+                        right: 0,
                     }}
                 >
                     <Box sx={{ maxWidth: '1110px' }}>
