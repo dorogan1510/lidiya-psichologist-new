@@ -12,13 +12,6 @@ import img8 from '../public/img/certificates/8.webp'
 import img9 from '../public/img/certificates/9.webp'
 import img10 from '../public/img/certificates/img(1).webp'
 import img11 from '../public/img/certificates/img(2).webp'
-import img12 from '../public/img/certificates/img(3).webp'
-import img13 from '../public/img/certificates/img(4).webp'
-import img14 from '../public/img/certificates/img(5).webp'
-import img15 from '../public/img/certificates/img(6).webp'
-import img16 from '../public/img/certificates/img(7).webp'
-import img17 from '../public/img/certificates/img(8).webp'
-import img18 from '../public/img/certificates/img(9).webp'
 
 const Qualification = () => {
     const certificates = [
@@ -69,48 +62,13 @@ const Qualification = () => {
         },
         {
             id: 10,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
+            name: 'Обучающая программа для психологов и психотерапевтов. Работа с травмой',
             img: img10,
         },
         {
             id: 11,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
+            name: 'Обучающая программа для психологов и психотерапевтов. Психиатрия для психологов',
             img: img11,
-        },
-        {
-            id: 12,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
-            img: img12,
-        },
-        {
-            id: 13,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
-            img: img13,
-        },
-        {
-            id: 14,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
-            img: img14,
-        },
-        {
-            id: 15,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
-            img: img15,
-        },
-        {
-            id: 16,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
-            img: img16,
-        },
-        {
-            id: 17,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
-            img: img17,
-        },
-        {
-            id: 18,
-            name: 'Сертификат обучающей программы по психиатрии для психологов и психотерапевтов',
-            img: img18,
         },
     ]
 
