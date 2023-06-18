@@ -52,34 +52,34 @@ const WithWhatIWork = () => (
             </Box>
             <Box sx={{ flex: '1' }}>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Недовольство собой, своими поступками и выборами;
+                    &#8226; Недовольство собой, своими поступками и выборами
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Непринятие своей внешности;
+                    &#8226; Непринятие своей внешности
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Переживания сложных чувств — стыда, вины, обиды,
-                    гнева;
+                    гнева
                 </Typography>
 
                 <Typography variant='h6' gutterBottom>
                     &#8226; Эмоциональные проблемы — тревога, апатия, перепады
                     настроения, подавленность, психосоматика, страхи, панические
-                    атаки;
+                    атаки
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Переживания, связанные с травматичными событиями в
-                    прошлом;
+                    прошлом
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Навязчивые мысли;
+                    &#8226; Навязчивые мысли
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Адаптация к резко изменившимся условиям жизни:
-                    переезд, эмиграция;
+                    переезд, эмиграция
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Переживание и страх одиночества;
+                    &#8226; Переживание и страх одиночества
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Проживание горя, утрата близких
@@ -124,32 +124,31 @@ const WithWhatIWork = () => (
             </Box>
             <Box sx={{ flex: '1' }}>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Боязнь проявить себя;
+                    &#8226; Боязнь проявить себя
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Сложности с пониманием своих талантов и
-                    способностей;
+                    &#8226; Сложности с пониманием своих талантов и способностей
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Неудовлетворённость работой;
+                    &#8226; Неудовлетворённость работой
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Желание поменять сферу деятельности;
+                    &#8226; Желание поменять сферу деятельности
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Профессиональное выгорание;
+                    &#8226; Профессиональное выгорание
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Определение своих целей и путей их достижения;
+                    &#8226; Определение своих целей и путей их достижения
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Ощущение потери смысла жизни;
+                    &#8226; Ощущение потери смысла жизни
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Обесценивание себя;
+                    &#8226; Обесценивание себя
                 </Typography>
                 <Typography variant='h6' gutterBottom>
-                    &#8226; Прокрастинация;
+                    &#8226; Прокрастинация
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Возрастные кризисы
@@ -196,7 +195,7 @@ const WithWhatIWork = () => (
                 <Typography variant='h6' gutterBottom>
                     &#8226; С партнёром: взаимные претензии, недовольства,
                     измены, развод, ревность, утрата партнёра, эмоциональная
-                    зависимость;
+                    зависимость
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Между родителями и детьми: отсутствие
@@ -207,7 +206,7 @@ const WithWhatIWork = () => (
                     &#8226; С друзьями, подчинёнными, коллегами, начальством:
                     неуверенность в себе, неумение отстаивать свою позицию,
                     страх осуждения или неодобрения в свой адрес, неумение
-                    сказать «нет»;
+                    сказать «нет»
                 </Typography>
                 <Typography variant='h6' gutterBottom>
                     &#8226; Невозможность построить отношения: низкая
