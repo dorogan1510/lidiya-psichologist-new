@@ -29,7 +29,10 @@ const HeroSectionImageRight = () => {
                 <Stack
                     flexDirection={{ xs: 'column', lg: 'row' }}
                     justifyContent='center'
-                    alignItems='flex-end'
+                    sx={{
+                        alignItems: { xs: 'center', lg: 'flex-end' },
+                        margin: { xs: '0', lg: '0 5rem' },
+                    }}
                     gap='1rem'
                 >
                     <Box sx={{ maxWidth: '1000px', order: 2 }}>
@@ -43,7 +46,6 @@ const HeroSectionImageRight = () => {
                             позитивными изменениями, я начала интересоваться
                             психологией как инструментом, помогающим человеку
                             стать стабильнее, увереннее и счастливее.
-                            <br />
                             <br />Я безмерно благодарна всем тем людям на моём
                             пути, которые помогли мне найти себя в новой
                             профессии. Она не престаёт меня вдохновлять,

@@ -10,8 +10,14 @@ import img6 from '../public/img/certificates/6.webp'
 import img7 from '../public/img/certificates/7.webp'
 import img8 from '../public/img/certificates/8.webp'
 import img9 from '../public/img/certificates/9.webp'
-import img10 from '../public/img/certificates/img(1).webp'
-import img11 from '../public/img/certificates/img(2).webp'
+import img10 from '../public/img/certificates/additional/(1).webp'
+import img11 from '../public/img/certificates/additional/(2).webp'
+import img12 from '../public/img/certificates/additional/(3).webp'
+import img13 from '../public/img/certificates/additional/(4).webp'
+import img14 from '../public/img/certificates/additional/(5).webp'
+import img15 from '../public/img/certificates/additional/(6).webp'
+import img16 from '../public/img/certificates/additional/(7).webp'
+import img17 from '../public/img/certificates/additional/(8).webp'
 
 const Qualification = () => {
     const certificates = [
@@ -62,13 +68,43 @@ const Qualification = () => {
         },
         {
             id: 10,
-            name: 'Обучающая программа для психологов и психотерапевтов. Работа с травмой',
+            name: 'Обучающая программа для психологов и психотерапевтов. Работа с нарциссической травмой.',
             img: img10,
         },
         {
             id: 11,
-            name: 'Обучающая программа для психологов и психотерапевтов. Психиатрия для психологов',
+            name: 'Обучающая программа для психологов и психотерапевтов. Работа с детскими травмами.',
             img: img11,
+        },
+        {
+            id: 12,
+            name: 'Обучающая программа для психологов и психотерапевтов. Работа с сексуальной травмой.',
+            img: img12,
+        },
+        {
+            id: 13,
+            name: 'Обучающая программа для психологов и психотерапевтов. Работа с травмой насилия.',
+            img: img13,
+        },
+        {
+            id: 14,
+            name: 'Обучающая программа для психологов и психотерапевтов. Психиатрия для психологов.',
+            img: img14,
+        },
+        {
+            id: 15,
+            name: 'Обучающая программа для психологов и психотерапевтов. Психиатрия для психологов.',
+            img: img15,
+        },
+        {
+            id: 16,
+            name: 'Обучающая программа для психологов и психотерапевтов. Психиатрия для психологов.',
+            img: img16,
+        },
+        {
+            id: 17,
+            name: 'Обучающая программа для психологов и психотерапевтов. Саморазрушающее и суицидальное поведение.',
+            img: img17,
         },
     ]
 

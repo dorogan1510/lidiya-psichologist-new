@@ -222,7 +222,7 @@ const Reviews = () => {
                 <Box
                     sx={{
                         margin: '0 auto 1rem',
-                        maxWidth: { xs: 400, md: '35%' },
+                        maxWidth: { xs: 400, md: '28%' },
                         height: 'fit-content',
                     }}
                 >
