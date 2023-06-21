@@ -1,13 +1,13 @@
 import { Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import img2 from '../public/img/2.webp'
+import img2 from '../public/img/4.png'
 
 const HeroSectionImageRight = () => {
     return (
         <Box
             sx={{
-                bgcolor: '#e4e4e4',
+                bgcolor: '#cbd5de',
             }}
         >
             <Container
