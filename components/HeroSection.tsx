@@ -1,7 +1,7 @@
 import { Button, Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import img1 from '../public/img/3.webp'
+import img1 from '../public/img/hero_img.webp'
 import { handwriteFont } from '../styles/theme'
 import style from './HeroSection.module.scss'
 

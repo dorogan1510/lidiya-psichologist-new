@@ -1,7 +1,7 @@
 import { Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import img2 from '../public/img/4.png'
+import img2 from '../public/img/aboutme_img.webp'
 
 const HeroSectionImageRight = () => {
     return (
