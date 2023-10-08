@@ -25,10 +25,6 @@ const Price = () => {
                 >
                     Оплата
                 </Typography>
-                <Typography variant='h6' mb='1.5rem'>
-                    Для клиентов за рубежом есть возможность оплаты на
-                    европейский счёт / PayPal
-                </Typography>
             </Box>
             <Stack
                 sx={{
@@ -50,6 +46,7 @@ const Price = () => {
                             flexDirection: { xs: 'column', md: 'row' },
                             gap: '3rem',
                             alignItems: 'center',
+                            mb: '3rem',
                         }}
                     >
                         <Card
@@ -71,9 +68,7 @@ const Price = () => {
                                 >
                                     90 минут
                                 </Typography>
-                                <Typography variant='h4'>
-                                    3500₽ / 40€
-                                </Typography>
+                                <Typography variant='h4'>3500₽</Typography>
                             </CardContent>
                             <CardActions
                                 sx={{
@@ -109,9 +104,7 @@ const Price = () => {
                                 >
                                     60 минут
                                 </Typography>
-                                <Typography variant='h4'>
-                                    3500₽ / 40€
-                                </Typography>
+                                <Typography variant='h4'>3500₽</Typography>
                             </CardContent>
                             <CardActions
                                 sx={{
@@ -131,6 +124,10 @@ const Price = () => {
                     </Stack>
                 </Box>
             </Stack>
+            <Typography sx={{ textAlign: 'center' }} variant='h6' mb='1.5rem'>
+                Для клиентов за рубежом есть возможность оплаты на европейский
+                счёт / PayPal (Стоимость сессии — 35€)
+            </Typography>
         </Container>
     )
 }

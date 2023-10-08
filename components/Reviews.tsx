@@ -38,6 +38,9 @@ import img6 from '../public/img/reviews/(6).webp'
 import img7 from '../public/img/reviews/(7).webp'
 import img8 from '../public/img/reviews/(8).webp'
 import img9 from '../public/img/reviews/(9).webp'
+import img38 from '../public/img/reviews/(38).webp'
+import img39 from '../public/img/reviews/(39).webp'
+import img40 from '../public/img/reviews/(40).webp'
 
 const reviwes = [
     {
@@ -187,6 +190,18 @@ const reviwes = [
     {
         id: 37,
         img: img37,
+    },
+    {
+        id: 38,
+        img: img38,
+    },
+    {
+        id: 39,
+        img: img39,
+    },
+    {
+        id: 40,
+        img: img40,
     },
 ]
 
