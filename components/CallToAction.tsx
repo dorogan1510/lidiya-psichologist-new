@@ -1,10 +1,32 @@
 import TelegramIcon from '@mui/icons-material/Telegram'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
-import { Box, Container, IconButton, Stack, Typography } from '@mui/material'
+import {
+    Box,
+    Button,
+    Container,
+    IconButton,
+    Stack,
+    Typography,
+} from '@mui/material'
 import Link from '../src/Link'
 import { handwriteFont } from '../styles/theme'
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
 
 const CallToAction = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
     return (
         <Box sx={{ bgcolor: '#b8d8f3' }}>
             <Container maxWidth='xl'>
@@ -16,10 +38,14 @@ const CallToAction = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <Typography variant='h4' textAlign={'center'}>
-                        Запишитесь на консультацию или задайте вопрос
+                    <Typography
+                        variant='h4'
+                        textAlign={'center'}
+                        marginBottom={'1.5rem'}
+                    >
+                        {t.CallToAction.signToConsultation}
                     </Typography>
-                    <Box>
+                    {/* <Box>
                         <IconButton
                             sx={{ color: 'secondary.main' }}
                             href='https://t.me/+79119042677'
@@ -56,17 +82,37 @@ const CallToAction = () => {
                                 serdiuk.l1970@gmail.com
                             </Link>
                         </Typography>
-                    </Stack>
+                    </Stack> */}
 
                     <Typography
                         variant='h4'
                         sx={{
                             textAlign: { xs: 'center', md: 'left' },
+                            marginBottom: '1.5rem',
                         }}
                         className={handwriteFont.className}
                     >
-                        Не оставайтесь одни в трудные времена!
+                        {t.CallToAction.hardTime}
                     </Typography>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            justifyContent: {
+                                xs: 'center',
+                                md: 'flex-start',
+                            },
+                        }}
+                    >
+                        <Button
+                            href='mailto:mrsla2010@gmail.com'
+                            variant='contained'
+                            sx={{ display: 'block' }}
+                            target='_blank'
+                            color='secondary'
+                        >
+                            {t.HeroSection.signToSession}
+                        </Button>
+                    </Box>
                 </Stack>
             </Container>
         </Box>

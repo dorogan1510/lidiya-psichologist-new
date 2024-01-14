@@ -3,219 +3,240 @@ import Image from 'next/image'
 import img10 from '../public/img/cartoons/(10).jpg'
 import img2 from '../public/img/cartoons/(2).jpg'
 import img6 from '../public/img/cartoons/(6).jpg'
-const WithWhatIWork = () => (
-    <Container
-        maxWidth='xl'
-        sx={{ pl: { xs: '1rem', md: '3rem' }, scrollMarginTop: '80px' }}
-        id='id1'
-    >
-        <Typography
-            variant='h4'
-            sx={{ textAlign: 'center', mb: '1.5rem', fontWeight: '600' }}
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
+import { useEffect, useState } from 'react'
+const WithWhatIWork = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
+    const [difficulties, setDifficulties] = useState<string[]>([])
+    const [personalDevelopment, setPersonalDevelopment] = useState<string[]>([])
+    const [difficultiesWithOthers, setDifficultiesWithOthers] = useState<
+        string[]
+    >([])
+
+    const russianDifficulties = [
+        t.WithWhatIWork.Difficulties.text1,
+        t.WithWhatIWork.Difficulties.text2,
+        t.WithWhatIWork.Difficulties.text3,
+        t.WithWhatIWork.Difficulties.text4,
+        t.WithWhatIWork.Difficulties.text5,
+        t.WithWhatIWork.Difficulties.text6,
+        t.WithWhatIWork.Difficulties.text7,
+        t.WithWhatIWork.Difficulties.text8,
+        t.WithWhatIWork.Difficulties.text9,
+    ]
+
+    const germanDifficulties = [
+        t.WithWhatIWork.Difficulties.text1,
+        t.WithWhatIWork.Difficulties.text2,
+        t.WithWhatIWork.Difficulties.text3,
+        t.WithWhatIWork.Difficulties.text4,
+        t.WithWhatIWork.Difficulties.text5,
+        t.WithWhatIWork.Difficulties.text6,
+        t.WithWhatIWork.Difficulties.text7,
+    ]
+
+    const russianPersonalDevelopment = [
+        t.WithWhatIWork.PersonalDevelopment.text1,
+        t.WithWhatIWork.PersonalDevelopment.text2,
+        t.WithWhatIWork.PersonalDevelopment.text3,
+        t.WithWhatIWork.PersonalDevelopment.text4,
+        t.WithWhatIWork.PersonalDevelopment.text5,
+        t.WithWhatIWork.PersonalDevelopment.text6,
+        t.WithWhatIWork.PersonalDevelopment.text7,
+        t.WithWhatIWork.PersonalDevelopment.text8,
+        t.WithWhatIWork.PersonalDevelopment.text9,
+        t.WithWhatIWork.PersonalDevelopment.text10,
+    ]
+
+    const germanPersonalDevelopment = [
+        t.WithWhatIWork.PersonalDevelopment.text1,
+        t.WithWhatIWork.PersonalDevelopment.text2,
+        t.WithWhatIWork.PersonalDevelopment.text3,
+    ]
+
+    const russianDifficultiesWithOthers = [
+        t.WithWhatIWork.DifficultiesWithOthers.text1,
+        t.WithWhatIWork.DifficultiesWithOthers.text2,
+        t.WithWhatIWork.DifficultiesWithOthers.text3,
+        t.WithWhatIWork.DifficultiesWithOthers.text4,
+    ]
+
+    const germanDifficultiesWithOthers = [
+        t.WithWhatIWork.DifficultiesWithOthers.text1,
+        t.WithWhatIWork.DifficultiesWithOthers.text2,
+        t.WithWhatIWork.DifficultiesWithOthers.text3,
+    ]
+
+    useEffect(() => {
+        if (locale === 'ru') {
+            setDifficulties(russianDifficulties)
+            setPersonalDevelopment(russianPersonalDevelopment)
+            setDifficultiesWithOthers(russianDifficultiesWithOthers)
+        } else {
+            setDifficulties(germanDifficulties)
+            setPersonalDevelopment(germanPersonalDevelopment)
+            setDifficultiesWithOthers(germanDifficultiesWithOthers)
+        }
+    }, [locale])
+
+    return (
+        <Container
+            maxWidth='xl'
+            sx={{ pl: { xs: '1rem', md: '3rem' }, scrollMarginTop: '80px' }}
+            id='id1'
         >
-            С чем я работаю
-        </Typography>
-        <Typography
-            variant='h5'
-            sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
-        >
-            Сложности в отношениях с самим собой
-        </Typography>
-        <Stack
-            sx={{
-                m: '0 auto 3rem',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignItems: 'left',
-                maxWidth: '1100px',
-                gap: { xs: '1.5rem', md: '3rem' },
-            }}
-        >
-            <Box
+            <Typography
+                variant='h4'
+                sx={{ textAlign: 'center', mb: '1.5rem', fontWeight: '600' }}
+            >
+                {t.WithWhatIWork.withWhatIWork}
+            </Typography>
+            <Typography
+                variant='h5'
+                sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
+            >
+                {t.WithWhatIWork.Difficulties.difficulties}
+            </Typography>
+            <Stack
                 sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    flex: '1',
+                    m: '0 auto 3rem',
+                    flexDirection: { xs: 'column', md: 'row' },
+                    alignItems: 'left',
+                    maxWidth: '1100px',
+                    gap: { xs: '1.5rem', md: '3rem' },
                 }}
             >
                 <Box
                     sx={{
-                        maxWidth: '300px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        flex: '1',
                     }}
                 >
-                    <Image
-                        src={img6}
-                        alt={''}
-                        style={{ width: '100%', height: 'auto' }}
-                    />
+                    <Box
+                        sx={{
+                            maxWidth: '300px',
+                        }}
+                    >
+                        <Image
+                            src={img6}
+                            alt={''}
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                    </Box>
                 </Box>
-            </Box>
-            <Box sx={{ flex: '1' }}>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Недовольство собой, своими поступками и выборами
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Непринятие своей внешности
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Переживание сложных чувств — стыда, вины, обиды,
-                    гнева
-                </Typography>
+                <Box sx={{ flex: '1' }}>
+                    {difficulties.map((data: string) => (
+                        <Typography variant='h6' gutterBottom>
+                            &#8226; {data}
+                        </Typography>
+                    ))}
+                </Box>
+            </Stack>
 
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Эмоциональные проблемы — тревога, апатия, перепады
-                    настроения, подавленность, психосоматика, страхи, панические
-                    атаки
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Переживания, связанные с травматичными событиями в
-                    прошлом
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Навязчивые мысли
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Адаптация к резко изменившимся условиям жизни:
-                    переезд, эмиграция
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Переживание и страх одиночества
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Проживание горя, утрата близких
-                </Typography>
-            </Box>
-        </Stack>
-
-        <Typography
-            variant='h5'
-            sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
-        >
-            Личностное развитие и самооценка
-        </Typography>
-        <Stack
-            sx={{
-                m: '0 auto 3rem',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignItems: 'left',
-                maxWidth: '1100px',
-                gap: { xs: '1.5rem', md: '3rem' },
-            }}
-        >
-            <Box
+            <Typography
+                variant='h5'
+                sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
+            >
+                {t.WithWhatIWork.PersonalDevelopment.personalDevelopment}
+            </Typography>
+            <Stack
                 sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    flex: '1',
+                    m: '0 auto 3rem',
+                    flexDirection: { xs: 'column', md: 'row' },
+                    alignItems: 'left',
+                    maxWidth: '1100px',
+                    gap: { xs: '1.5rem', md: '3rem' },
                 }}
             >
                 <Box
                     sx={{
-                        maxWidth: '300px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        flex: '1',
                     }}
                 >
-                    <Image
-                        src={img10}
-                        alt={''}
-                        style={{ width: '100%', height: 'auto' }}
-                    />
+                    <Box
+                        sx={{
+                            maxWidth: '300px',
+                        }}
+                    >
+                        <Image
+                            src={img10}
+                            alt={''}
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                    </Box>
                 </Box>
-            </Box>
-            <Box sx={{ flex: '1' }}>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Боязнь проявить себя
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Сложности с пониманием своих талантов и способностей
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Неудовлетворённость работой
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Желание поменять сферу деятельности
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Профессиональное выгорание
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Определение своих целей и путей их достижения
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Ощущение потери смысла жизни
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Обесценивание себя
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Прокрастинация
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Возрастные кризисы
-                </Typography>
-            </Box>
-        </Stack>
+                <Box sx={{ flex: '1' }}>
+                    {personalDevelopment.map((data: string) => (
+                        <Typography variant='h6' gutterBottom>
+                            &#8226; {data}
+                        </Typography>
+                    ))}
+                </Box>
+            </Stack>
 
-        <Typography
-            variant='h5'
-            sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
-        >
-            Трудности в отношениях с другими
-        </Typography>
-        <Stack
-            sx={{
-                m: '0 auto 3rem',
-                flexDirection: { xs: 'column', md: 'row' },
-                alignItems: 'left',
-                maxWidth: '1100px',
-                gap: { xs: '1.5rem', md: '3rem' },
-            }}
-        >
-            <Box
+            <Typography
+                variant='h5'
+                sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
+            >
+                {t.WithWhatIWork.DifficultiesWithOthers.difficultiesWithOthers}
+            </Typography>
+            <Stack
                 sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    flex: '1',
+                    m: '0 auto 3rem',
+                    flexDirection: { xs: 'column', md: 'row' },
+                    alignItems: 'left',
+                    maxWidth: '1100px',
+                    gap: { xs: '1.5rem', md: '3rem' },
                 }}
             >
                 <Box
                     sx={{
-                        maxWidth: '300px',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        flex: '1',
                     }}
                 >
-                    <Image
-                        src={img2}
-                        alt={''}
-                        style={{ width: '100%', height: 'auto' }}
-                    />
+                    <Box
+                        sx={{
+                            maxWidth: '300px',
+                        }}
+                    >
+                        <Image
+                            src={img2}
+                            alt={''}
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                    </Box>
                 </Box>
-            </Box>
-            <Box sx={{ flex: '1' }}>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; С партнёром: взаимные претензии, недовольства,
-                    измены, развод, ревность, утрата партнёра, эмоциональная
-                    зависимость
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Между родителями и детьми: отсутствие
-                    взаимопонимания, проблемы сепарации, трудности подросткового
-                    возраста, синдром «опустевшего гнезда»
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; С друзьями, подчинёнными, коллегами, начальством:
-                    неуверенность в себе, неумение отстаивать свою позицию,
-                    страх осуждения или неодобрения в свой адрес, неумение
-                    сказать «нет»
-                </Typography>
-                <Typography variant='h6' gutterBottom>
-                    &#8226; Невозможность построить отношения: низкая
-                    самооценка, потеря уважения и доверия к противоположному
-                    полу, безответные отношения
-                </Typography>
-            </Box>
-        </Stack>
-    </Container>
-)
+                <Box sx={{ flex: '1' }}>
+                    {difficultiesWithOthers.map((data: string) => (
+                        <Typography variant='h6' gutterBottom>
+                            &#8226; {data}
+                        </Typography>
+                    ))}
+                </Box>
+            </Stack>
+        </Container>
+    )
+}
 
 export default WithWhatIWork

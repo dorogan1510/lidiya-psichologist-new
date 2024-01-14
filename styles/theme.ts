@@ -32,7 +32,7 @@ let theme = createTheme({
         values: {
             xs: 0,
             sm: 800,
-            md: 1024,
+            md: 1120,
             lg: 1200,
             xl: 1920,
         },

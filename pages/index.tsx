@@ -21,7 +21,7 @@ export default function Home() {
             <Reviews />
             <Qualification />
             <Contacts />
-            <Price />
+            {/* <Price /> */}
             <CallToAction />
         </Box>
     )

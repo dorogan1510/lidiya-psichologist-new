@@ -2,8 +2,23 @@ import { Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
 import img2 from '../public/img/aboutme_img.webp'
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
 
 const HeroSectionImageRight = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
     return (
         <Box
             sx={{
@@ -24,7 +39,7 @@ const HeroSectionImageRight = () => {
                     gutterBottom
                     sx={{ textAlign: 'center', fontWeight: '600' }}
                 >
-                    Обо мне
+                    {t.AboutMe.aboutMe}
                 </Typography>
                 <Stack
                     flexDirection={{ xs: 'column', lg: 'row' }}
@@ -36,33 +51,14 @@ const HeroSectionImageRight = () => {
                     gap='1rem'
                 >
                     <Box sx={{ maxWidth: '1000px', order: 2 }}>
+                        <Typography variant='h6' gutterBottom>
+                            {t.AboutMe.aboutMeText1}
+                        </Typography>
                         <Typography variant='h6' sx={{ mb: '1.5rem' }}>
-                            Мой путь в психологию начался с поисков возможностей
-                            улучшить качество собственной жизни. По своей первой
-                            специальности я филолог-германист, переводчик и
-                            преподаватель немецкого языка и литературы. Интерес
-                            к психологии и психотерапии помогли мне преодолеть
-                            мои собственные кризисы. Со временем, вдохновившись
-                            позитивными изменениями, я начала интересоваться
-                            психологией как инструментом, помогающим человеку
-                            стать стабильнее, увереннее и счастливее.
-                            <br />Я безмерно благодарна всем тем людям на моём
-                            пути, которые помогли мне найти себя в новой
-                            профессии. Она не престаёт меня вдохновлять,
-                            заряжать энергией и давать силы для дальнейшего
-                            профессионального роста. Закончив
-                            Санкт-Петербургский Институт Гештальта, я начала
-                            свою частную психологическую практику, которая
-                            насчитывает более 2500 часов. Я продолжаю
-                            совершенствовать свои профессиональные навыки и
-                            способности - регулярно прохожу индивидуальную и
-                            групповую супервизию, участвую в семинарах и
-                            долгосрочных образовательных программах для
-                            психологов, осваиваю профессиональную литературу, а
-                            также нахожусь в регулярной личной терапии.
+                            {t.AboutMe.aboutMeText2}
                         </Typography>
                     </Box>
-                    <Box
+                    {/* <Box
                         sx={{
                             order: 1,
                             maxWidth: '400px',
@@ -79,7 +75,7 @@ const HeroSectionImageRight = () => {
                                 borderRadius: '20px',
                             }}
                         />
-                    </Box>
+                    </Box> */}
                 </Stack>
             </Container>
         </Box>

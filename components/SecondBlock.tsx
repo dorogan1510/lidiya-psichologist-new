@@ -1,6 +1,21 @@
 import { Box, Container, Typography } from '@mui/material'
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
 
 const SecondBlock = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
     return (
         <Container maxWidth='xl' sx={{ mb: '3rem' }}>
             <Typography
@@ -8,7 +23,7 @@ const SecondBlock = () => {
                 gutterBottom
                 sx={{ textAlign: 'center', fontWeight: '600' }}
             >
-                Что для меня психология
+                {t.SecondBlock.whatIsPsychology}
             </Typography>
 
             <Box
@@ -20,26 +35,11 @@ const SecondBlock = () => {
                 }}
             >
                 <Typography variant='h6' gutterBottom>
-                    Для меня наиболее ценное в психологии то, что она помогает
-                    понять и принять самого себя. Я убеждена, что, сталкиваясь с
-                    различными испытаниями, мы можем с большим успехом
-                    преодолевать их, если опираемся не на советы и мнения
-                    других, а на собственные внутренние ресурсы. Поэтому свою
-                    задачу как психолога я вижу в том, чтобы помочь человеку
-                    увидеть эти опоры и ресурсы, а для этого важно научиться
-                    осознавать и принимать свои потребности и эмоции, свои
-                    ценности и границы. И это важно не только в ситуации
-                    кризиса. Опираясь на мой собственный опыт и опыт моих
-                    клиентов, могу сказать, что понимание самого себя необходимо
-                    нам, чтобы выстраивать и поддерживать гармоничные отношения,
-                    сохранять физическое здоровье и успешно самореализовываться.
+                    {t.SecondBlock.text1}
                 </Typography>
                 <Typography variant='h6'>
-                    <i>«Познай самого себя!»</i> Это изречение античных
-                    мудрецов, на мой взгляд, не утратило актуальности и сегодня.
-                    Я предлагаю Вам последовать этому призыву и буду рада
-                    сопровождать Вас на очень важную и увлекательную встречу -
-                    встречу с самим собой.
+                    <i>{t.SecondBlock.knowYourself}</i>&nbsp;
+                    {t.SecondBlock.text2}
                 </Typography>
             </Box>
         </Container>

@@ -9,8 +9,22 @@ import {
     Stack,
     Typography,
 } from '@mui/material'
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
 
 const Price = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
     return (
         <Container
             id='id7'
@@ -23,7 +37,7 @@ const Price = () => {
                     gutterBottom
                     sx={{ fontWeight: '600' }}
                 >
-                    Оплата
+                    {t.Price.price}
                 </Typography>
             </Box>
             <Stack
@@ -39,7 +53,7 @@ const Price = () => {
                         sx={{ textAlign: 'center' }}
                         gutterBottom
                     >
-                        Онлайн
+                        {t.Price.online}
                     </Typography>
                     <Stack
                         sx={{
@@ -54,7 +68,7 @@ const Price = () => {
                             elevation={6}
                         >
                             <CardHeader
-                                title='Первая встреча'
+                                title={t.Price.firstMeet}
                                 sx={{
                                     backgroundColor: 'primary.main',
                                     textAlign: 'center',
@@ -66,9 +80,11 @@ const Price = () => {
                                     variant='h6'
                                     color='text.secondary'
                                 >
-                                    90 минут
+                                    {t.Price.firstMeetDuration}
                                 </Typography>
-                                <Typography variant='h4'>3500₽</Typography>
+                                <Typography variant='h4'>
+                                    {t.Price.firstMeetPrice}
+                                </Typography>
                             </CardContent>
                             <CardActions
                                 sx={{
@@ -81,7 +97,7 @@ const Price = () => {
                                     href='https://wa.me/79119042677?text='
                                     target='_blank'
                                 >
-                                    Запись на сеанс
+                                    {t.Price.signButton}
                                 </Button>
                             </CardActions>
                         </Card>
@@ -90,7 +106,7 @@ const Price = () => {
                             elevation={6}
                         >
                             <CardHeader
-                                title='Последующие встречи '
+                                title={t.Price.otherMeets}
                                 sx={{
                                     backgroundColor: 'primary.main',
                                     textAlign: 'center',
@@ -102,9 +118,11 @@ const Price = () => {
                                     variant='h6'
                                     color='text.secondary'
                                 >
-                                    60 минут
+                                    {t.Price.otherMeetsDuration}
                                 </Typography>
-                                <Typography variant='h4'>3500₽</Typography>
+                                <Typography variant='h4'>
+                                    {t.Price.otherMeetsPrice}
+                                </Typography>
                             </CardContent>
                             <CardActions
                                 sx={{
@@ -117,7 +135,7 @@ const Price = () => {
                                     href='https://wa.me/79119042677?text='
                                     target='_blank'
                                 >
-                                    Запись на сеанс
+                                    {t.Price.signButton}
                                 </Button>
                             </CardActions>
                         </Card>
@@ -125,8 +143,7 @@ const Price = () => {
                 </Box>
             </Stack>
             <Typography sx={{ textAlign: 'center' }} variant='h6' mb='1.5rem'>
-                Для клиентов за рубежом есть возможность оплаты на европейский
-                счёт / PayPal (Стоимость сессии — 35€)
+                {t.Price.text}
             </Typography>
         </Container>
     )

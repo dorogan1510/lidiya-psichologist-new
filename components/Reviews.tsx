@@ -41,8 +41,11 @@ import img9 from '../public/img/reviews/(9).webp'
 import img38 from '../public/img/reviews/(38).webp'
 import img39 from '../public/img/reviews/(39).webp'
 import img40 from '../public/img/reviews/(40).webp'
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
 
-const reviwes = [
+const reviews = [
     {
         id: 1,
         img: img1,
@@ -215,73 +218,89 @@ const style = {
 }
 
 const Reviews = () => {
-    return (
-        <Box sx={{ bgcolor: '#e4e4e4' }}>
-            <Container
-                id='id4'
-                maxWidth='xl'
-                sx={{
-                    mb: '3rem',
-                    p: '1rem',
-                    scrollMarginTop: '80px',
-                }}
-            >
-                <Typography
-                    variant='h4'
-                    sx={{ textAlign: 'center', fontWeight: '600' }}
-                >
-                    Мои отзывы
-                </Typography>
-                <Typography
-                    variant='h6'
-                    sx={{ textAlign: 'center', mb: '1.5rem' }}
-                >
-                    Все отзывы публикуются анонимно с согласия клиентов
-                </Typography>
+    const router = useRouter()
+    const { locale } = router
 
-                <Box
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
+    if (locale === 'ru') {
+        return (
+            <Box sx={{ bgcolor: '#e4e4e4' }}>
+                <Container
+                    id='id4'
+                    maxWidth='xl'
                     sx={{
-                        margin: '0 auto 1rem',
-                        maxWidth: { xs: 400, md: '28%' },
-                        height: 'fit-content',
+                        mb: '3rem',
+                        p: '1rem',
+                        scrollMarginTop: '80px',
                     }}
                 >
-                    <Carousel autoPlay={false}>
-                        {reviwes.map(data => (
-                            <Image
-                                key={data.id}
-                                src={data.img}
-                                alt={'certificate'}
-                                loading='lazy'
-                                style={{
-                                    width: '100%',
-                                    height: 'auto',
-                                    marginBottom: '1rem',
-                                }}
-                            />
-                        ))}
-                    </Carousel>
-                </Box>
-
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        mb: '1.5rem',
-                    }}
-                >
-                    <Button
-                        variant='contained'
-                        color='secondary'
-                        href='https://spb.profi.ru/profile/SerdyukLA/#reviews-tab'
-                        target='_blank'
+                    <Typography
+                        variant='h4'
+                        sx={{ textAlign: 'center', fontWeight: '600' }}
                     >
-                        Больше отзывов на профи.ру
-                    </Button>
-                </Box>
-            </Container>
-        </Box>
-    )
+                        {t.Reviews.myReviews}
+                    </Typography>
+                    <Typography
+                        variant='h6'
+                        sx={{ textAlign: 'center', mb: '1.5rem' }}
+                    >
+                        {t.Reviews.text}
+                    </Typography>
+
+                    <Box
+                        sx={{
+                            margin: '0 auto 1rem',
+                            maxWidth: { xs: 400, md: '28%' },
+                            height: 'fit-content',
+                        }}
+                    >
+                        <Carousel autoPlay={false}>
+                            {reviews.map(data => (
+                                <Image
+                                    key={data.id}
+                                    src={data.img}
+                                    alt={'certificate'}
+                                    loading='lazy'
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        marginBottom: '1rem',
+                                    }}
+                                />
+                            ))}
+                        </Carousel>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            mb: '1.5rem',
+                        }}
+                    >
+                        <Button
+                            variant='contained'
+                            color='secondary'
+                            href='https://spb.profi.ru/profile/SerdyukLA/#reviews-tab'
+                            target='_blank'
+                        >
+                            {t.Reviews.moreReviews}
+                        </Button>
+                    </Box>
+                </Container>
+            </Box>
+        )
+    } else {
+        return <></>
+    }
 }
 
 export default Reviews

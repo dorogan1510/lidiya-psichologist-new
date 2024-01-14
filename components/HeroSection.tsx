@@ -1,18 +1,33 @@
 import { Button, Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import img1 from '../public/img/hero_img.webp'
+import img1 from '../public/img/hero_img.png'
 import { handwriteFont } from '../styles/theme'
 import style from './HeroSection.module.scss'
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
 
 const HeroSection = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
     return (
         <Box sx={{ bgcolor: '#b8d8f3', mb: '3rem' }}>
             <Container
                 maxWidth='xl'
                 sx={{
                     pl: { xs: '1rem', md: '3rem' },
-                    height: { xs: 'auto', md: '600px' },
+                    height: { xs: 'auto', md: '500px' },
                     position: 'relative',
                 }}
             >
@@ -36,8 +51,15 @@ const HeroSection = () => {
                             gutterBottom
                             sx={{ textAlign: { xs: 'center', md: 'left' } }}
                         >
-                            Психолог <br className={style.brTag} /> Лидия Сердюк
+                            {t.HeroSection.psychologistName}
                         </Typography>
+                        {/* <Typography
+                            variant='h3'
+                            gutterBottom
+                            sx={{ textAlign: { xs: 'center', md: 'left' } }}
+                        >
+                            Психолог <br className={style.brTag} /> Лидия Сердюк
+                        </Typography> */}
                         <Typography
                             variant='h4'
                             sx={{
@@ -46,7 +68,7 @@ const HeroSection = () => {
                             }}
                             className={handwriteFont.className}
                         >
-                            Cамая важная встреча — это встреча с самим с собой
+                            {t.HeroSection.importantMeeting}
                         </Typography>
                         <Box
                             sx={{
@@ -58,13 +80,13 @@ const HeroSection = () => {
                             }}
                         >
                             <Button
-                                href='https://wa.me/79119042677?text='
+                                href='mailto:mrsla2010@gmail.com'
                                 variant='contained'
                                 sx={{ display: 'block' }}
                                 target='_blank'
                                 color='secondary'
                             >
-                                Записаться на сессию
+                                {t.HeroSection.signToSession}
                             </Button>
                         </Box>
                     </Box>

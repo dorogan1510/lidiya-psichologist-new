@@ -5,8 +5,23 @@ import AutoGraphIcon from '@mui/icons-material/AutoGraph'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
 import SearchIcon from '@mui/icons-material/Search'
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility'
+import { useRouter } from 'next/router'
+import de from '../languages/de'
+import ru from '../languages/ru'
 
 const Features2 = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
     return (
         <Container
             id='id3'
@@ -19,7 +34,7 @@ const Features2 = () => {
                     gutterBottom
                     sx={{ fontWeight: '600' }}
                 >
-                    Как я работаю
+                    {t.HowIWork.howIWork}
                 </Typography>
             </Box>
             <Grid container spacing={'2rem'} sx={{ justifyContent: 'center' }}>
@@ -33,11 +48,7 @@ const Features2 = () => {
                             }}
                         />
                     </Box>
-                    <Typography variant='h6'>
-                        Я уважаю Вашу индивидуальность и, какими бы ни были Ваши
-                        предпочтения и ценности, я не буду подвергать их
-                        сомнению или навязывать свои собственные.
-                    </Typography>
+                    <Typography variant='h6'>{t.HowIWork.text1}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Box color={'secondary.main'}>
@@ -50,12 +61,7 @@ const Features2 = () => {
                             }}
                         />
                     </Box>
-                    <Typography variant='h6'>
-                        Считаю недопустимым подталкивать Вас к «нужным», с моей
-                        точки зрения, изменениям. Вы сами решаете, как, куда и в
-                        каком темпе Вам двигаться, что менять в своей жизни, а
-                        что оставлять как есть.
-                    </Typography>
+                    <Typography variant='h6'>{t.HowIWork.text2}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Box color={'secondary.main'}>
@@ -68,12 +74,7 @@ const Features2 = () => {
                             }}
                         />
                     </Box>
-                    <Typography variant='h6'>
-                        Я помогу Вам исследовать то, что препятствует Вашему
-                        развитию и гармоничному существованию, а также буду
-                        способствовать обнаружению новых ресурсов и способов
-                        изменения ситуации в нужную для Вас сторону.
-                    </Typography>
+                    <Typography variant='h6'>{t.HowIWork.text3}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Box color={'secondary.main'}>
@@ -86,14 +87,7 @@ const Features2 = () => {
                             }}
                         />
                     </Box>
-                    <Typography variant='h6'>
-                        В терапии мы работаем с эмоциональной сферой, поэтому на
-                        наших встречах Вы можете проявлять и проживать любые
-                        чувства и эмоции, не боясь осуждения и не переживая за
-                        мою устойчивость. Я постараюсь создать для Вас
-                        поддерживающую и безопасную обстановку и гарантирую Вам{' '}
-                        <b>полную конфиденциальность</b> наших встреч.
-                    </Typography>
+                    <Typography variant='h6'>{t.HowIWork.text4}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Box color={'secondary.main'}>
@@ -106,13 +100,7 @@ const Features2 = () => {
                             }}
                         />
                     </Box>
-                    <Typography variant='h6'>
-                        Продолжительность психологической работы зависит от
-                        целей, которые Вы перед собой ставите и сложности Вашего
-                        запроса. Это обсуждается с Вами на первой встрече. Я
-                        работаю как в краткосрочном консультировании, так и в
-                        долгосрочной терапии.
-                    </Typography>
+                    <Typography variant='h6'>{t.HowIWork.text5}</Typography>
                 </Grid>
                 <Grid item xs={12} sm={12}>
                     <Typography
@@ -120,30 +108,13 @@ const Features2 = () => {
                         gutterBottom
                         sx={{ textAlign: 'center', fontWeight: '600' }}
                     >
-                        В каком направлении психотерапии я работаю
+                        {t.HowIWork.directionOfPsychotherapy}
                     </Typography>
                     <Typography
                         variant='h6'
                         sx={{ maxWidth: '1000px', m: '0 auto' }}
                     >
-                        В современной психотерапии существуют несколько базовых
-                        направлений, каждое из которых имеет свою историю,
-                        научное обоснование и методологические разработки. В
-                        своей работе я опираюсь, прежде всего, на
-                        гештальт-терапию. Это направление привлекает меня своей
-                        эффективностью, многообразием техник, целостным подходом
-                        к запросу клиента, позволяющим учитывать его
-                        психологические, телесные и духовные аспекты. В
-                        гештальт-подходе признаётся уникальность каждого
-                        человека, а следовательно терапевт не интерпретирует и
-                        не переучивает, а исследует, помогая таким образом
-                        клиенту найти его собственный уникальный «ключ» к
-                        решению поставленных вопросов. Я ценю Гештальт-терапию
-                        также за то, что она позволяет включать в работу техники
-                        из других направлений психотерапии. Так, в зависимости
-                        от запроса клиента, я могу использовать техники
-                        экзистенциального подхода, арт-терапии и
-                        эмоционально-образной терапии.
+                        {t.HowIWork.text6}
                     </Typography>
                 </Grid>
             </Grid>

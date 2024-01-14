@@ -1,7 +1,14 @@
 import MenuIcon from '@mui/icons-material/Menu'
 import TelegramIcon from '@mui/icons-material/Telegram'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
-import { Stack } from '@mui/material'
+import {
+    FormControl,
+    InputLabel,
+    NativeSelect,
+    Select,
+    SelectChangeEvent,
+    Stack,
+} from '@mui/material'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -12,38 +19,98 @@ import MenuItem from '@mui/material/MenuItem'
 import Toolbar from '@mui/material/Toolbar'
 import * as React from 'react'
 import styles from './Header.module.scss'
-const pages = [
-    {
-        id: '#id1',
-        link: 'С чем я работаю',
-    },
-    {
-        id: '#id2',
-        link: 'Обо мне',
-    },
-    {
-        id: '#id3',
-        link: 'Как я работаю',
-    },
-    {
-        id: '#id4',
-        link: 'Отзывы',
-    },
-    {
-        id: '#id5',
-        link: 'Квалификация',
-    },
-    {
-        id: '#id6',
-        link: 'Контакты',
-    },
-    {
-        id: '#id7',
-        link: 'Оплата',
-    },
-]
+import { useRouter } from 'next/router'
+import ru from '../languages/ru'
+import de from '../languages/de'
+import { blue } from '@mui/material/colors'
 
 const Header = () => {
+    const router = useRouter()
+    const { locale } = router
+
+    const t: any = (() => {
+        switch (locale) {
+            case 'ru':
+                return ru
+            case 'de':
+                return de
+        }
+    })()
+
+    const russianPages = [
+        {
+            id: '#id1',
+            link: t.Header.link1,
+        },
+        {
+            id: '#id2',
+            link: t.Header.link2,
+        },
+        {
+            id: '#id3',
+            link: t.Header.link3,
+        },
+        {
+            id: '#id4',
+            link: t.Header.link4,
+        },
+        {
+            id: '#id5',
+            link: t.Header.link5,
+        },
+        {
+            id: '#id6',
+            link: t.Header.link6,
+        },
+    ]
+
+    const germanPages = [
+        {
+            id: '#id1',
+            link: t.Header.link1,
+        },
+        {
+            id: '#id2',
+            link: t.Header.link2,
+        },
+        {
+            id: '#id3',
+            link: t.Header.link3,
+        },
+        {
+            id: '#id5',
+            link: t.Header.link5,
+        },
+        {
+            id: '#id6',
+            link: t.Header.link6,
+        },
+    ]
+
+    interface IPages {
+        id: string
+        link: string
+    }
+
+    const [language, setLanguage] = React.useState<string>('')
+    const [pages, setPages] = React.useState<IPages[]>([])
+
+    React.useEffect(() => {
+        if (locale === 'ru') {
+            setPages(russianPages)
+        } else {
+            setPages(germanPages)
+        }
+    }, [locale])
+
+    const changeLanguage = (e: any) => {
+        const locale = e.target.value
+        const path = locale + router.pathname
+        router.replace(path, path, { locale })
+
+        setLanguage(e.target.value as string)
+    }
+
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
         null
     )
@@ -77,8 +144,9 @@ const Header = () => {
                             display: { xs: 'none', md: 'block' },
                         }}
                     >
-                        Я на профи ру
+                        {t.Header.profiru}
                     </Button>
+
                     <Box
                         sx={{
                             flexGrow: 1,
@@ -86,7 +154,7 @@ const Header = () => {
                             justifyContent: 'center',
                         }}
                     >
-                        {pages.map(page => (
+                        {pages.map((page: any) => (
                             <Button
                                 key={page.id}
                                 onClick={handleCloseNavMenu}
@@ -104,42 +172,47 @@ const Header = () => {
                             </Button>
                         ))}
                     </Box>
-                    {/* <Button
-                        variant='contained'
-                        color='secondary'
-                        href='https://wa.me/79119042677?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%BD%D0%B0%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E.'
-                        target='_blank'
-                        sx={{
-                            color: 'white',
-                            display: { xs: 'none', md: 'block' },
-                        }}
-                    >
-                        Запись
-                    </Button> */}
                     <Stack
                         sx={{
                             display: { xs: 'none', md: 'flex' },
                             flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: '1.5rem',
                         }}
                     >
-                        <IconButton
-                            href='https://t.me/+79119042677'
-                            target='_blank'
-                        >
-                            <TelegramIcon
-                                sx={{ width: '30px', height: '30px' }}
-                                color='secondary'
-                            />
-                        </IconButton>
-                        <IconButton
-                            target='_blank'
-                            href='https://wa.me/79119042677?text='
-                        >
-                            <WhatsAppIcon
-                                sx={{ width: '30px', height: '30px' }}
-                                color='secondary'
-                            />
-                        </IconButton>
+                        {/* <Box>
+                            <IconButton
+                                href='https://t.me/+79119042677'
+                                target='_blank'
+                            >
+                                <TelegramIcon
+                                    sx={{ width: '30px', height: '30px' }}
+                                    color='secondary'
+                                />
+                            </IconButton>
+                            <IconButton
+                                target='_blank'
+                                href='https://wa.me/79119042677?text='
+                            >
+                                <WhatsAppIcon
+                                    sx={{ width: '30px', height: '30px' }}
+                                    color='secondary'
+                                />
+                            </IconButton>
+                        </Box> */}
+                        <FormControl color='secondary'>
+                            <NativeSelect
+                                onChange={changeLanguage}
+                                defaultValue={locale}
+                                inputProps={{
+                                    name: 'language',
+                                    id: 'uncontrolled-native',
+                                }}
+                            >
+                                <option value='ru'>RU</option>
+                                <option value='de'>DE</option>
+                            </NativeSelect>
+                        </FormControl>
                     </Stack>
 
                     <Box
@@ -181,7 +254,7 @@ const Header = () => {
                                 },
                             }}
                         >
-                            {pages.map(page => (
+                            {pages.map((page: any) => (
                                 <MenuItem
                                     key={page.id}
                                     onClick={handleCloseNavMenu}
@@ -201,59 +274,75 @@ const Header = () => {
                             ))}
                         </Menu>
                     </Box>
-                    <Stack
+                    <Button
+                        variant='contained'
+                        color='secondary'
+                        size='small'
+                        href='https://spb.profi.ru/profile/SerdyukLA'
+                        target='_blank'
+                        sx={{
+                            color: 'white',
+                            display: { xs: 'block', md: 'none' },
+                        }}
+                    >
+                        {t.Header.profiru}
+                    </Button>
+                    <Box
+                        sx={{
+                            display: { xs: 'flex', md: 'none' },
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: { xs: '0.5rem', md: '1.5rem' },
+                        }}
+                    >
+                        <FormControl color='secondary'>
+                            <NativeSelect
+                                onChange={changeLanguage}
+                                defaultValue={locale}
+                                inputProps={{
+                                    name: 'language',
+                                    id: 'uncontrolled-native',
+                                }}
+                            >
+                                <option value='ru'>RU</option>
+                                <option value='de'>DE</option>
+                            </NativeSelect>
+                        </FormControl>
+                    </Box>
+                    {/* <Stack
                         sx={{
                             flexDirection: 'row',
                             gap: '1rem',
                             alignItems: 'center',
                         }}
                     >
-                        <Button
-                            variant='contained'
-                            color='secondary'
-                            size='small'
-                            href='https://spb.profi.ru/profile/SerdyukLA'
-                            target='_blank'
-                            sx={{
-                                color: 'white',
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                            Я на профи ру
-                        </Button>
-                        {/* <Button
-                            variant='contained'
-                            color='secondary'
-                            size='small'
-                            href='https://wa.me/79119042677?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%BD%D0%B0%20%D0%BF%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D0%B5%D1%81%D1%81%D0%B8%D1%8E.'
-                            target='_blank'
-                            sx={{
-                                color: 'white',
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                            Запись
-                        </Button> */}
+
+
                         <Stack
                             sx={{
                                 display: { xs: 'flex', md: 'none' },
                                 flexDirection: 'row',
+                                alignItems: 'center',
+                                gap: { xs: '0.5rem', md: '1.5rem' },
                             }}
                         >
-                            <IconButton
-                                href='https://t.me/+79119042677'
-                                target='_blank'
-                            >
-                                <TelegramIcon color='secondary' />
-                            </IconButton>
-                            <IconButton
-                                target='_blank'
-                                href='https://wa.me/79119042677?text='
-                            >
-                                <WhatsAppIcon color='secondary' />
-                            </IconButton>
+                            <Box>
+                                <IconButton
+                                    href='https://t.me/+79119042677'
+                                    target='_blank'
+                                >
+                                    <TelegramIcon color='secondary' />
+                                </IconButton>
+                                <IconButton
+                                    target='_blank'
+                                    href='https://wa.me/79119042677?text='
+                                >
+                                    <WhatsAppIcon color='secondary' />
+                                </IconButton>
+                            </Box>
+
                         </Stack>
-                    </Stack>
+                    </Stack> */}
                 </Toolbar>
             </Container>
         </AppBar>
