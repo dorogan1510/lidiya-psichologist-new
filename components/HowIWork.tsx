@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
-
+import PublicIcon from '@mui/icons-material/Public'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import AutoGraphIcon from '@mui/icons-material/AutoGraph'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
@@ -8,6 +8,7 @@ import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility
 import { useRouter } from 'next/router'
 import de from '../languages/de'
 import ru from '../languages/ru'
+import { useEffect, useState } from 'react'
 
 const Features2 = () => {
     const router = useRouter()
@@ -21,6 +22,15 @@ const Features2 = () => {
                 return de
         }
     })()
+
+    const [lastSectionOnlyGerman, setLastSectionOnlyGerman] =
+        useState<boolean>(true)
+
+    useEffect(() => {
+        if (locale === 'de') {
+            setLastSectionOnlyGerman(false)
+        } else setLastSectionOnlyGerman(true)
+    }, [locale])
 
     return (
         <Container
@@ -102,6 +112,21 @@ const Features2 = () => {
                     </Box>
                     <Typography variant='h6'>{t.HowIWork.text5}</Typography>
                 </Grid>
+                {!lastSectionOnlyGerman && (
+                    <Grid item xs={12} sm={4}>
+                        <Box color={'secondary.main'}>
+                            <PublicIcon
+                                style={{
+                                    width: '30px',
+                                    height: '30px',
+                                    marginBottom: '1rem',
+                                    color: 'primary.main',
+                                }}
+                            />
+                        </Box>
+                        <Typography variant='h6'>{t.HowIWork.text7}</Typography>
+                    </Grid>
+                )}
                 <Grid item xs={12} sm={12}>
                     <Typography
                         variant='h4'

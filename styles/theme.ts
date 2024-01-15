@@ -17,6 +17,15 @@ export const handwriteFont = Bad_Script({
 })
 
 let theme = createTheme({
+    components: {
+        MuiTypography: {
+            defaultProps: {
+                variantMapping: {
+                    h4: 'h5',
+                },
+            },
+        },
+    },
     palette: {
         primary: {
             main: '#D4CCD7',

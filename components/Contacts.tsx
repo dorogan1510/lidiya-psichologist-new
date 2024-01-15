@@ -76,7 +76,7 @@ const Contacts = () => {
                     </Box>
                 </Stack>
 
-                {german && (
+                {/* {german && (
                     <Stack
                         sx={{
                             flexDirection: { xs: 'column', md: 'row' },
@@ -109,7 +109,7 @@ const Contacts = () => {
                             />
                         </Box>
                     </Stack>
-                )}
+                )} */}
             </Box>
         </Container>
     )

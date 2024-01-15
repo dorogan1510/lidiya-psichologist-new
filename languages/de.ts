@@ -14,7 +14,7 @@ export default {
         aboutMeText1:
             'Mein erstes Studium abolvierte ich in der Germanistik und arbeitete danach mehrere Jahre als Übersetzerin und Deutschlehrerin. Mein Weg in die Psychologie begann mit der Suche nach Möglichkeiten, die eigene Lebensqualität zu verbessern. Inspiriert durch positive Veränderungen, begann ich mich für Psychologie als Werkzeug zu interessieren, welches den Menschen hilft, stabiler, selbstbewusster und glücklicher zu werden.',
         aboutMeText2:
-            'Nach meinem Abschluss des Psychologiestudiums an der Gestalt-Institut Sankt-Petersburg eröffnete ich meine eigene Praxis. Ich bilde mich kontinuierlich weiter - nehme an Seminaren und Vortbildungsprogrammen für Psychologen teil. Der Besuch von  Einzel- und Gruppensupervisionen ist für mich ein wesentlicher Bestandteil meiner Arbeit.',
+            'Nach meinem Abschluss des Psychologiestudiums an der Gestalt-Institut Sankt-Petersburg eröffnete ich meine eigene Praxis. Ich bilde mich kontinuierlich weiter - nehme an Seminaren und Vortbildungsprogrammen für Psychologen teil. Der Besuch von  Einzel- und Gruppensupervisionen ist für mich ein  zur Begegnung mit sich selbst. Bestandteil meiner Arbeit.',
     },
     CallToAction: {
         signToConsultation: 'Nachricht schreiben',
@@ -22,11 +22,13 @@ export default {
     },
     Contacts: {
         contacts: 'Kontakte',
-        text1: 'Online weltweit. Offline nach Vereinbarung  in Hamburg.',
+        text1: 'Online weltweit, offline in Hamburg.',
         text2: '',
     },
     HeroSection: {
-        psychologistName: 'Terapeutin für Gestaltterapie Lidiia Serdiuk',
+        psychologist: 'Therapeutin für Gestalttherapie',
+        psychologistName: 'Lidiia Serdiuk',
+        psychologistNameFull: 'Психолог Лидия Сердюк',
         importantMeeting:
             'Die wichtigste Begegnung ist die Begegnung mit sich selbst!',
         signToSession: 'Nachricht schreiben',
@@ -37,10 +39,11 @@ export default {
         text2: ' Ich dränge Sie nicht zu „sinnvollen“ Veränderungen. Sie bestimmen das Tempo und die Richtung. Sie entscheiden, was Sie verändern und was Sie bestehen lassen wollen.',
         text3: ' Ich helfe Ihnen herauszufinden, was Sie in Ihrer Entwicklung und in Ihrem harmonischen Dasein hindert. Ich fördere Sie bei der Entdeckung neuer Ressourcen und Methoden, um Ihre aktuelle Situation in die für Sie richtige Richtung zu verändern.',
         text4: 'In der Therapie beschäftigen wir uns mit der emotionalen Sphäre. Während unserer Treffen können Sie Ihre Gefühle und Emotionen offen durchleben, ohne Angst, verurteilt zu werden. Ich erschaffe für Sie unterstützende und sichere Umgebung und garantiere Ihnen absolute Vertraulichkeit.',
-        text5: 'Die Dauer der Psychotherapie hängt von Ihren Zielen und vom Schwierigkeitsgrad Ihrer Anfrage ab. Das besprechen wir bei unserem ersten Treffen. Ich arbeite sowohl in der Kurzzeitberatung als auch in der Langzeittherapie. Als Russin mit ukrainischen Wurzeln arbeite ich gemeinsam mit meinen Kunden verschiedener Nationalitäten und Weltanschauungen am inneren Frieden.',
+        text5: 'Die Dauer der Psychotherapie hängt von Ihren Zielen und vom Schwierigkeitsgrad Ihrer Anfrage ab. Das besprechen wir bei unserem ersten Treffen. Ich arbeite sowohl in der Kurzzeitberatung als auch in der Langzeittherapie.',
         directionOfPsychotherapy:
             'In welcher psychotherapeutischen Richtung arbeite ich',
         text6: 'In meiner Arbeit stütze ich mich hauptsächlich auf Gestalt Therapie. Diese Richtung hat für mich folgende Vorteile: Effizienz, Vielfalt an Techniken, ganzheitliche Herangehensweise an die Wünsche des Kunden, Berücksichtigung von psychologischen, körperlichen und geistigen (spirituosen) Aspekten. Der Ansatz der Gestalt-Therapie erkennt die Einzigartigkeit und Individualität jedes Einzelnen Menschen. Der Gestalt-Therapeut interpretiert nicht, schult nicht um. Er erforscht und hilft so dem Kunden, seinen eigenen, einzigartigen „Schlüssel“ zur Lösung zu finden.',
+        text7: 'Als Russin mit ukrainischen Wurzeln arbeite ich gemeinsam mit meinen Kunden verschiedener Nationalitäten und Weltanschauungen am inneren Frieden.',
     },
     Price: {
         price: '',
@@ -100,7 +103,10 @@ export default {
         whatIsPsychology: 'Was bedeutet Psychologie für mich',
         text1: 'Das Wertvollste an der Psychologie ist für mich die Tatsache, dass sie hilft, sich selbst zu verstehen und zu akzeptieren. Ich bin überzeugt, dass wir verschiedene Herausforderungen erfolgreicher  überwinden können, wenn wir uns nicht auf die Ratschläge und Meinungen der anderen, sondern auf unsere internen Ressourcen und eigene Werte stützen. Deswegen sehe ich meine Aufgabe als Therapeutin darin, den Menschen zu helfen, diese Ressourcen in sich zu entdecken. Dafür ist es wichtig, die eigenen Bedürfnisse und Emotionen, Werte und Grenzen zu erkennen.',
         knowYourself: '',
-        text2: 'In diesem Hinsicht finde ich den Ausspruch der antiken Weisen „ Erkenne dich selbst“ nach wie vor sehr aktuell. Ich schlage Ihnen vor diesem Aufruf zu folgen und lade Sie zu einer der wichtigsten und aufregendsten Begegnung - zur Begegnung mit sich selbst.',
+        text2: 'In diesem Hinsicht finde ich den Ausspruch der antiken Weisen',
+        text3: '„Erkenne dich selbst“',
+        text4: 'nach wie vor sehr aktuell. Ich schlage Ihnen vor diesem Aufruf zu folgen und lade Sie zu einer der wichtigsten und aufregendsten Begegnung —',
+        text5: 'zur Begegnung mit sich selbst.',
     },
     WithWhatIWork: {
         withWhatIWork: 'Meine Arbeitsbereiche',

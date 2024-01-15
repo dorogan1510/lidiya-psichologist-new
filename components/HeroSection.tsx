@@ -7,6 +7,7 @@ import style from './HeroSection.module.scss'
 import { useRouter } from 'next/router'
 import de from '../languages/de'
 import ru from '../languages/ru'
+import { useEffect, useState } from 'react'
 
 const HeroSection = () => {
     const router = useRouter()
@@ -21,13 +22,22 @@ const HeroSection = () => {
         }
     })()
 
+    const [psychologistFullName, setpsychologistFullName] =
+        useState<boolean>(true)
+
+    useEffect(() => {
+        if (locale === 'de') {
+            setpsychologistFullName(false)
+        } else setpsychologistFullName(true)
+    }, [locale])
+
     return (
         <Box sx={{ bgcolor: '#b8d8f3', mb: '3rem' }}>
             <Container
                 maxWidth='xl'
                 sx={{
                     pl: { xs: '1rem', md: '3rem' },
-                    height: { xs: 'auto', md: '500px' },
+                    height: { xs: 'auto', md: '600px' },
                     position: 'relative',
                 }}
             >
@@ -46,13 +56,38 @@ const HeroSection = () => {
                     }}
                 >
                     <Box sx={{ maxWidth: '1110px' }}>
-                        <Typography
-                            variant='h3'
-                            gutterBottom
-                            sx={{ textAlign: { xs: 'center', md: 'left' } }}
-                        >
-                            {t.HeroSection.psychologistName}
-                        </Typography>
+                        {psychologistFullName && (
+                            <Typography
+                                variant='h3'
+                                gutterBottom
+                                sx={{ textAlign: { xs: 'center', md: 'left' } }}
+                            >
+                                {t.HeroSection.psychologistNameFull}
+                            </Typography>
+                        )}
+
+                        {!psychologistFullName && (
+                            <>
+                                <Typography
+                                    variant='h3'
+                                    gutterBottom
+                                    sx={{
+                                        textAlign: { xs: 'center', md: 'left' },
+                                    }}
+                                >
+                                    {t.HeroSection.psychologistName}
+                                </Typography>
+                                <Typography
+                                    variant='h3'
+                                    gutterBottom
+                                    sx={{
+                                        textAlign: { xs: 'center', md: 'left' },
+                                    }}
+                                >
+                                    {t.HeroSection.psychologist}
+                                </Typography>
+                            </>
+                        )}
                         {/* <Typography
                             variant='h3'
                             gutterBottom

@@ -1,7 +1,7 @@
 import { Container, Stack, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import img2 from '../public/img/aboutme_img.webp'
+import img2 from '../public/img/aboutme_img.png'
 import { useRouter } from 'next/router'
 import de from '../languages/de'
 import ru from '../languages/ru'
@@ -48,7 +48,7 @@ const HeroSectionImageRight = () => {
                         alignItems: { xs: 'center', lg: 'flex-end' },
                         margin: { xs: '0', lg: '0 5rem' },
                     }}
-                    gap='1rem'
+                    gap='2rem'
                 >
                     <Box sx={{ maxWidth: '1000px', order: 2 }}>
                         <Typography variant='h6' gutterBottom>
@@ -58,7 +58,7 @@ const HeroSectionImageRight = () => {
                             {t.AboutMe.aboutMeText2}
                         </Typography>
                     </Box>
-                    {/* <Box
+                    <Box
                         sx={{
                             order: 1,
                             maxWidth: '400px',
@@ -75,7 +75,7 @@ const HeroSectionImageRight = () => {
                                 borderRadius: '20px',
                             }}
                         />
-                    </Box> */}
+                    </Box>
                 </Stack>
             </Container>
         </Box>

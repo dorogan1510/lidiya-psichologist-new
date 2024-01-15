@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router'
 import ru from '../languages/ru'
 import de from '../languages/de'
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Container, Stack, Typography } from '@mui/material'
+import { text } from 'stream/consumers'
 
 const GermanQualification = () => {
     const router = useRouter()
@@ -30,23 +31,48 @@ const GermanQualification = () => {
                 >
                     {t.Qualification.myQualification}
                 </Typography>
-                <Typography
-                    variant='h5'
-                    gutterBottom
-                    sx={{ textAlign: 'center', fontWeight: '600' }}
+                <Stack sx={{ marginBottom: '1.5rem' }}>
+                    <Box>
+                        <Typography variant='h5' sx={{ fontWeight: '500' }}>
+                            2016-2019 Gestaltinstitut Sankt-Petersburg.
+                            Gestaltterapeutin.
+                        </Typography>
+                    </Box>
+                </Stack>
+                <Stack
+                    sx={{
+                        flexDirection: { xs: 'column', md: 'row' },
+                        marginBottom: '1.5rem',
+                    }}
                 >
-                    2016-2019 Gestaltinstitut Sankt-Petersburg.
-                    Gestaltterapeutin.
-                </Typography>
-                <Typography
-                    variant='h5'
-                    gutterBottom
-                    sx={{ textAlign: 'center', fontWeight: '600' }}
-                >
-                    2019-2020 Dialog Schule “Intellegentia”, Stockholm -
-                    Lernprojekt ”Gestaltterapie mit den Kindern und Familie nach
-                    dem Violet Oaklander-Modell”.
-                </Typography>
+                    <Box sx={{ flex: '1' }}>
+                        <Typography variant='h5' sx={{ fontWeight: '500' }}>
+                            2019-2020 Dialog Schule "Intelligentia",
+                            Sankt-Petersburg, Stockholm.
+                        </Typography>
+                    </Box>
+                    <Box sx={{ flex: '1' }}>
+                        <Typography variant='h5' sx={{ fontWeight: '500' }}>
+                            Fortbildungsprogramm "Gestalttherapie mit den
+                            Kindern und Familie nach dem Violet
+                            Oaklander-Modell”.
+                        </Typography>
+                    </Box>
+                </Stack>
+                <Stack sx={{ flexDirection: { xs: 'column', md: 'row' } }}>
+                    <Box sx={{ flex: '1' }}>
+                        <Typography variant='h5' sx={{ fontWeight: '500' }}>
+                            2022-2023 Fortbildungsprogramme für Psychologen und
+                            Psychotherapeuten.
+                        </Typography>
+                    </Box>
+                    <Box sx={{ flex: '1' }}>
+                        <Typography variant='h5' sx={{ fontWeight: '500' }}>
+                            "Majak II, III". Projekt von Aglaja Dateshidye.
+                            Sankt.Petersburg
+                        </Typography>
+                    </Box>
+                </Stack>
             </Container>
         </>
     )
