@@ -101,7 +101,7 @@ export default {
     },
     SecondBlock: {
         whatIsPsychology: 'Was bedeutet Psychologie für mich',
-        text1: 'Das Wertvollste an der Psychologie ist für mich die Tatsache, dass siehilft, sich selbst zu verstehen und zu akzeptieren. Ich bin überzeugt, dass wir verschiedene Herausforderungen erfolgreicher überwinden können, wenn wir uns nicht auf die Ratschläge und Meinungen der anderen, sondern auf unsere internen Ressourcen und eigene Werte stützen. Deswegen sehe ich meine Aufgabe als Therapeutin darin, den Menschen zu helfen, diese Ressourcen in sich zu entdecken. Und die Therapie ist für mich der Weg zu der wichtigsten Begegnung unseres Lebens - zur Begegnung mit sich selbst.',
+        text1: 'Das Wertvollste an der Psychologie ist für mich die Tatsache, dass siehilft, sich selbst zu verstehen und zu akzeptieren. Ich bin überzeugt, dass wir verschiedene Herausforderungen erfolgreicher überwinden können, wenn wir uns nicht auf die Ratschläge und Meinungen der anderen, sondern auf unsere internen Ressourcen und eigene Werte stützen. Deswegen sehe ich meine Aufgabe als Therapeutin darin, den Menschen zu helfen, diese Ressourcen in sich zu entdecken. Und die Therapie ist für mich der Weg zu der wichtigsten Begegnung unseres Lebens — zur Begegnung mit sich selbst.',
         knowYourself: '',
         text2: 'In diesem Hinsicht finde ich den Ausspruch der antiken Weisen',
         text3: '„Erkenne dich selbst“',

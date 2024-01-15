@@ -41,13 +41,13 @@ const SecondBlock = () => {
                 <Typography variant='h6' gutterBottom>
                     {t.SecondBlock.text1}
                 </Typography>
-                <Box>
+                {/* <Box>
                     <Typography variant='h6' sx={{ display: 'inline-block' }}>
                         <i>{t.SecondBlock.knowYourself}</i>&nbsp;
                         {t.SecondBlock.text2} <i>{t.SecondBlock.text3}</i>{' '}
                         {t.SecondBlock.text4} {t.SecondBlock.text5}
                     </Typography>
-                </Box>
+                </Box> */}
             </Box>
         </Container>
     )
