@@ -2,6 +2,7 @@ import { Box, Container, Typography } from '@mui/material'
 import { useRouter } from 'next/router'
 import de from '../languages/de'
 import ru from '../languages/ru'
+import { useEffect, useState } from 'react'
 
 const SecondBlock = () => {
     const router = useRouter()
@@ -15,6 +16,14 @@ const SecondBlock = () => {
                 return de
         }
     })()
+
+    const [german, setGerman] = useState<boolean>()
+
+    useEffect(() => {
+        if (locale === 'de') {
+            setGerman(true)
+        } else setGerman(false)
+    }, [locale])
 
     return (
         <Container maxWidth='xl' sx={{ mb: '3rem' }}>
@@ -41,13 +50,18 @@ const SecondBlock = () => {
                 <Typography variant='h6' gutterBottom>
                     {t.SecondBlock.text1}
                 </Typography>
-                {/* <Box>
-                    <Typography variant='h6' sx={{ display: 'inline-block' }}>
-                        <i>{t.SecondBlock.knowYourself}</i>&nbsp;
-                        {t.SecondBlock.text2} <i>{t.SecondBlock.text3}</i>{' '}
-                        {t.SecondBlock.text4} {t.SecondBlock.text5}
-                    </Typography>
-                </Box> */}
+                {!german && (
+                    <Box>
+                        <Typography
+                            variant='h6'
+                            sx={{ display: 'inline-block' }}
+                        >
+                            <i>{t.SecondBlock.knowYourself}</i>&nbsp;
+                            {t.SecondBlock.text2} <i>{t.SecondBlock.text3}</i>{' '}
+                            {t.SecondBlock.text4} {t.SecondBlock.text5}
+                        </Typography>
+                    </Box>
+                )}
             </Box>
         </Container>
     )

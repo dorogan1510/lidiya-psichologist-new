@@ -22,8 +22,7 @@ const HeroSection = () => {
         }
     })()
 
-    const [psychologistFullName, setpsychologistFullName] =
-        useState<boolean>(true)
+    const [psychologistFullName, setpsychologistFullName] = useState<boolean>()
 
     useEffect(() => {
         if (locale === 'de') {

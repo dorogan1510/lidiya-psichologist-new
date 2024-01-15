@@ -24,7 +24,7 @@ const Features2 = () => {
     })()
 
     const [lastSectionOnlyGerman, setLastSectionOnlyGerman] =
-        useState<boolean>(true)
+        useState<boolean>()
 
     useEffect(() => {
         if (locale === 'de') {
