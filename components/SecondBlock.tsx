@@ -21,7 +21,11 @@ const SecondBlock = () => {
             <Typography
                 variant='h4'
                 gutterBottom
-                sx={{ textAlign: 'center', fontWeight: '600' }}
+                sx={{
+                    textAlign: 'center',
+                    fontWeight: '600',
+                    fontSize: { xs: '1.3rem', md: '2.27rem' },
+                }}
             >
                 {t.SecondBlock.whatIsPsychology}
             </Typography>
