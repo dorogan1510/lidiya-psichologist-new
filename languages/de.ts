@@ -42,7 +42,7 @@ export default {
         text5: 'Die Dauer der Psychotherapie hängt von Ihren Zielen und vom Schwierigkeitsgrad Ihrer Anfrage ab. Das besprechen wir bei unserem ersten Treffen. Ich arbeite sowohl in der Kurzzeitberatung als auch in der Langzeittherapie.',
         directionOfPsychotherapy:
             'In welcher psychotherapeutischen Richtung arbeite ich',
-        text6: 'In meiner Arbeit stütze ich mich hauptsächlich auf Gestalt Therapie. Diese Richtung hat für mich folgende Vorteile: Effizienz, Vielfalt an Techniken, ganzheitliche Herangehensweise an die Wünsche des Kunden, Berücksichtigung von psychologischen, körperlichen und geistigen (spirituosen) Aspekten. Der Ansatz der Gestalt-Therapie erkennt die Einzigartigkeit und Individualität jedes Einzelnen Menschen. Der Gestalt-Therapeut interpretiert nicht, schult nicht um. Er erforscht und hilft so dem Kunden, seinen eigenen, einzigartigen „Schlüssel“ zur Lösung zu finden.',
+        text6: 'In meiner Arbeit stütze ich mich hauptsächlich auf Gestalt Therapie - eine humanistische, erfahrensorientierte und erlebnisaktivierende Form der Psychotherapie. Dieser therapeutische Ansatz fasziniert mich durch seine  Effizienz, Vielfalt an Techniken, ganzheitliche Herangehensweise an die Anfrage der Kunden (Klienten) - Berücksichtigung von psychologischen, körperlichen und geistigen (spirituosen) Aspekten. Der Gestalt-Therapeut interpretiert nicht, schult nicht um. Er erforscht und hilft so dem Kunden, seinen eigenen, einzigartigen „Schlüssel“ zur Lösung zu finden.',
         text7: 'Als Russin mit ukrainischen Wurzeln arbeite ich gemeinsam mit meinen Kunden verschiedener Nationalitäten und Weltanschauungen am inneren Frieden.',
     },
     Price: {
@@ -101,7 +101,7 @@ export default {
     },
     SecondBlock: {
         whatIsPsychology: 'Was bedeutet Psychologie für mich',
-        text1: 'Das Wertvollste an der Psychologie ist für mich die Tatsache, dass sie hilft, sich selbst zu verstehen und zu akzeptieren. Ich bin überzeugt, dass wir verschiedene Herausforderungen erfolgreicher  überwinden können, wenn wir uns nicht auf die Ratschläge und Meinungen der anderen, sondern auf unsere internen Ressourcen und eigene Werte stützen. Deswegen sehe ich meine Aufgabe als Therapeutin darin, den Menschen zu helfen, diese Ressourcen in sich zu entdecken. Dafür ist es wichtig, die eigenen Bedürfnisse und Emotionen, Werte und Grenzen zu erkennen.',
+        text1: 'Das Wertvollste an der Psychologie ist für mich die Tatsache, dass siehilft, sich selbst zu verstehen und zu akzeptieren. Ich bin überzeugt, dass wir verschiedene Herausforderungen erfolgreicher überwinden können, wenn wir uns nicht auf die Ratschläge und Meinungen der anderen, sondern auf unsere internen Ressourcen und eigene Werte stützen. Deswegen sehe ich meine Aufgabe als Therapeutin darin, den Menschen zu helfen, diese Ressourcen in sich zu entdecken. Und die Therapie ist für mich der Weg zu der wichtigsten Begegnung unseres Lebens - zur Begegnung mit sich selbst.',
         knowYourself: '',
         text2: 'In diesem Hinsicht finde ich den Ausspruch der antiken Weisen',
         text3: '„Erkenne dich selbst“',

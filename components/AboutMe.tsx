@@ -45,7 +45,7 @@ const HeroSectionImageRight = () => {
                     flexDirection={{ xs: 'column', lg: 'row' }}
                     justifyContent='center'
                     sx={{
-                        alignItems: { xs: 'center', lg: 'flex-end' },
+                        alignItems: { xs: 'center' },
                         margin: { xs: '0', lg: '0 5rem' },
                     }}
                     gap='2rem'
