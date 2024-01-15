@@ -50,7 +50,7 @@ const HeroSectionImageRight = () => {
                     }}
                     gap='2rem'
                 >
-                    <Box sx={{ maxWidth: '1000px', order: 2 }}>
+                    <Box sx={{ maxWidth: '1000px', order: 2, flex: '1' }}>
                         <Typography variant='h6' gutterBottom>
                             {t.AboutMe.aboutMeText1}
                         </Typography>
@@ -61,8 +61,9 @@ const HeroSectionImageRight = () => {
                     <Box
                         sx={{
                             order: 1,
-                            maxWidth: '400px',
+                            maxWidth: '300px',
                             margin: '0 auto',
+                            flex: '1',
                         }}
                     >
                         <Image

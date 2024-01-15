@@ -228,8 +228,8 @@ const WithWhatIWork = () => {
                     </Box>
                 </Box>
                 <Box sx={{ flex: '1' }}>
-                    {difficultiesWithOthers.map((data: string) => (
-                        <Typography variant='h6' gutterBottom>
+                    {difficultiesWithOthers.map((data: string, id: number) => (
+                        <Typography key={id} variant='h6' gutterBottom>
                             &#8226; {data}
                         </Typography>
                     ))}
