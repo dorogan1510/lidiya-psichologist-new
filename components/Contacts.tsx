@@ -58,11 +58,7 @@ const Contacts = () => {
                     }}
                 >
                     <Box sx={{ maxWidth: '300px' }}>
-                        <Image
-                            src={img9}
-                            alt={''}
-                            style={{ width: '100%', height: 'auto' }}
-                        />
+                        <Image src={img9} alt={''} style={{ width: '100%' }} />
                     </Box>
                     <Box
                         sx={{
