@@ -23,6 +23,7 @@ const HeroSectionImageRight = () => {
         <Box
             sx={{
                 bgcolor: '#cde0f0',
+                mb: '3rem',
             }}
         >
             <Container

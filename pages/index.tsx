@@ -9,17 +9,19 @@ import Qualification from '../components/Qualification'
 import Reviews from '../components/Reviews'
 import SecondBlock from '../components/SecondBlock'
 import WithWhatIWork from '../components/WithWhatIWork'
+import DirectionOfPsychotherapy from '../components/DirectionOfPsychotherapy'
 
 export default function Home() {
     return (
         <Box>
             <HeroSection />
             <SecondBlock />
-            <WithWhatIWork />
             <HowIWork />
+            <DirectionOfPsychotherapy />
+            <WithWhatIWork />
             <AboutMe />
-            <Reviews />
             <Qualification />
+            <Reviews />
             <Contacts />
             {/* <Price /> */}
             {/* <CallToAction /> */}

@@ -126,28 +126,6 @@ const Features2 = () => {
                     </Box>
                     <Typography variant='h6'>{t.HowIWork.text7}</Typography>
                 </Grid>
-                <Grid item xs={12} sm={12}>
-                    <Typography
-                        variant='h4'
-                        gutterBottom
-                        sx={{ textAlign: 'center', fontWeight: '600' }}
-                    >
-                        {t.HowIWork.directionOfPsychotherapy}
-                    </Typography>
-                    <Typography
-                        variant='h6'
-                        sx={{ maxWidth: '1000px', m: '0 auto' }}
-                        gutterBottom
-                    >
-                        {t.HowIWork.text6}
-                    </Typography>
-                    <Typography
-                        variant='h6'
-                        sx={{ maxWidth: '1000px', m: '0 auto' }}
-                    >
-                        {t.HowIWork.text8}
-                    </Typography>
-                </Grid>
             </Grid>
         </Container>
     )

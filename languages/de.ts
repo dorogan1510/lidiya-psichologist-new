@@ -2,10 +2,10 @@ export default {
     Header: {
         profiru: 'Mein Profil auf profi.ru',
         link1: 'Home',
-        link2: 'wie ich arbeite',
+        link2: 'Wie ich arbeite',
         link3: 'Therapie-Themen',
         link4: '',
-        link5: 'über mich',
+        link5: 'Über mich',
         link6: 'Ausbildung/Weiterbildung',
         link7: 'Kontakte',
     },
@@ -92,7 +92,7 @@ export default {
             'Обучающая программа для психологов и психотерапевтов. Психиатрия для психологов.',
         certificate17:
             'Обучающая программа для психологов и психотерапевтов. Саморазрушающее и суицидальное поведение.',
-        myQualification: 'meine Ausbildung/Weiterbildung',
+        myQualification: 'Meine Ausbildung/Weiterbildung',
     },
     Reviews: {
         myReviews: '',

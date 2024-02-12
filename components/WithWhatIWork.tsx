@@ -92,149 +92,164 @@ const WithWhatIWork = () => {
     }, [locale])
 
     return (
-        <Container
-            maxWidth='xl'
-            sx={{ pl: { xs: '1rem', md: '3rem' }, scrollMarginTop: '80px' }}
-            id='id3'
-        >
-            <Typography
-                variant='h4'
-                sx={{ textAlign: 'center', mb: '1.5rem', fontWeight: '600' }}
-            >
-                {t.WithWhatIWork.withWhatIWork}
-            </Typography>
-            <Typography
-                variant='h5'
-                sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
-            >
-                {t.WithWhatIWork.Difficulties.difficulties}
-            </Typography>
-            <Stack
+        <Box>
+            <Container
+                maxWidth='xl'
                 sx={{
-                    m: '0 auto 3rem',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    alignItems: 'left',
-                    maxWidth: '1100px',
-                    gap: { xs: '1.5rem', md: '3rem' },
+                    pl: { xs: '1rem', md: '3rem' },
+                    scrollMarginTop: '80px',
+                    py: '3rem',
                 }}
+                id='id3'
             >
-                <Box
+                <Typography
+                    variant='h4'
                     sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flex: '1',
+                        textAlign: 'center',
+                        mb: '1.5rem',
+                        fontWeight: '600',
+                    }}
+                >
+                    {t.WithWhatIWork.withWhatIWork}
+                </Typography>
+                <Typography
+                    variant='h5'
+                    sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
+                >
+                    {t.WithWhatIWork.Difficulties.difficulties}
+                </Typography>
+                <Stack
+                    sx={{
+                        m: '0 auto 3rem',
+                        flexDirection: { xs: 'column', md: 'row' },
+                        alignItems: 'left',
+                        maxWidth: '1100px',
+                        gap: { xs: '1.5rem', md: '3rem' },
                     }}
                 >
                     <Box
                         sx={{
-                            maxWidth: '300px',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flex: '1',
                         }}
                     >
-                        <Image
-                            src={img6}
-                            alt={''}
-                            style={{ width: '100%', height: 'auto' }}
-                        />
+                        <Box
+                            sx={{
+                                maxWidth: '300px',
+                            }}
+                        >
+                            <Image
+                                src={img6}
+                                alt={''}
+                                style={{ width: '100%', height: 'auto' }}
+                            />
+                        </Box>
                     </Box>
-                </Box>
-                <Box sx={{ flex: '1' }}>
-                    {difficulties.map((data: string) => (
-                        <Typography variant='h6' gutterBottom>
-                            &#8226; {data}
-                        </Typography>
-                    ))}
-                </Box>
-            </Stack>
+                    <Box sx={{ flex: '1' }}>
+                        {difficulties.map((data: string) => (
+                            <Typography variant='h6' gutterBottom>
+                                &#8226; {data}
+                            </Typography>
+                        ))}
+                    </Box>
+                </Stack>
 
-            <Typography
-                variant='h5'
-                sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
-            >
-                {t.WithWhatIWork.PersonalDevelopment.personalDevelopment}
-            </Typography>
-            <Stack
-                sx={{
-                    m: '0 auto 3rem',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    alignItems: 'left',
-                    maxWidth: '1100px',
-                    gap: { xs: '1.5rem', md: '3rem' },
-                }}
-            >
-                <Box
+                <Typography
+                    variant='h5'
+                    sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
+                >
+                    {t.WithWhatIWork.PersonalDevelopment.personalDevelopment}
+                </Typography>
+                <Stack
                     sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flex: '1',
+                        m: '0 auto 3rem',
+                        flexDirection: { xs: 'column', md: 'row' },
+                        alignItems: 'left',
+                        maxWidth: '1100px',
+                        gap: { xs: '1.5rem', md: '3rem' },
                     }}
                 >
                     <Box
                         sx={{
-                            maxWidth: '300px',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flex: '1',
                         }}
                     >
-                        <Image
-                            src={img10}
-                            alt={''}
-                            style={{ width: '100%', height: 'auto' }}
-                        />
+                        <Box
+                            sx={{
+                                maxWidth: '300px',
+                            }}
+                        >
+                            <Image
+                                src={img10}
+                                alt={''}
+                                style={{ width: '100%', height: 'auto' }}
+                            />
+                        </Box>
                     </Box>
-                </Box>
-                <Box sx={{ flex: '1' }}>
-                    {personalDevelopment.map((data: string) => (
-                        <Typography variant='h6' gutterBottom>
-                            &#8226; {data}
-                        </Typography>
-                    ))}
-                </Box>
-            </Stack>
+                    <Box sx={{ flex: '1' }}>
+                        {personalDevelopment.map((data: string) => (
+                            <Typography variant='h6' gutterBottom>
+                                &#8226; {data}
+                            </Typography>
+                        ))}
+                    </Box>
+                </Stack>
 
-            <Typography
-                variant='h5'
-                sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
-            >
-                {t.WithWhatIWork.DifficultiesWithOthers.difficultiesWithOthers}
-            </Typography>
-            <Stack
-                sx={{
-                    m: '0 auto 3rem',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    alignItems: 'left',
-                    maxWidth: '1100px',
-                    gap: { xs: '1.5rem', md: '3rem' },
-                }}
-            >
-                <Box
+                <Typography
+                    variant='h5'
+                    sx={{ textAlign: 'center', mb: '2rem', fontWeight: '600' }}
+                >
+                    {
+                        t.WithWhatIWork.DifficultiesWithOthers
+                            .difficultiesWithOthers
+                    }
+                </Typography>
+                <Stack
                     sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flex: '1',
+                        m: '0 auto',
+                        flexDirection: { xs: 'column', md: 'row' },
+                        alignItems: 'left',
+                        maxWidth: '1100px',
+                        gap: { xs: '1.5rem', md: '3rem' },
                     }}
                 >
                     <Box
                         sx={{
-                            maxWidth: '300px',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flex: '1',
                         }}
                     >
-                        <Image
-                            src={img2}
-                            alt={''}
-                            style={{ width: '100%', height: 'auto' }}
-                        />
+                        <Box
+                            sx={{
+                                maxWidth: '300px',
+                            }}
+                        >
+                            <Image
+                                src={img2}
+                                alt={''}
+                                style={{ width: '100%', height: 'auto' }}
+                            />
+                        </Box>
                     </Box>
-                </Box>
-                <Box sx={{ flex: '1' }}>
-                    {difficultiesWithOthers.map((data: string, id: number) => (
-                        <Typography key={id} variant='h6' gutterBottom>
-                            &#8226; {data}
-                        </Typography>
-                    ))}
-                </Box>
-            </Stack>
-        </Container>
+                    <Box sx={{ flex: '1' }}>
+                        {difficultiesWithOthers.map(
+                            (data: string, id: number) => (
+                                <Typography key={id} variant='h6' gutterBottom>
+                                    &#8226; {data}
+                                </Typography>
+                            )
+                        )}
+                    </Box>
+                </Stack>
+            </Container>
+        </Box>
     )
 }
 
