@@ -48,6 +48,9 @@ const SecondBlock = () => {
                 }}
             >
                 <Typography variant='h6'>{t.SecondBlock.text1}</Typography>
+                <Typography variant='h6'>
+                    {t.SecondBlock.text4} <i>{t.SecondBlock.text5}</i>
+                </Typography>
                 {german && (
                     <>
                         <Typography
@@ -60,7 +63,7 @@ const SecondBlock = () => {
                             variant='h6'
                             sx={{ display: 'inline-block' }}
                         >
-                            {t.SecondBlock.text3}
+                            {t.SecondBlock.text3} <i>{t.SecondBlock.text6}</i>
                         </Typography>
                     </>
                 )}
