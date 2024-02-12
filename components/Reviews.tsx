@@ -48,15 +48,15 @@ import ru from '../languages/ru'
 const reviews = [
     {
         id: 1,
-        img: img1,
+        img: img15,
     },
     {
         id: 2,
-        img: img2,
+        img: img16,
     },
     {
         id: 3,
-        img: img3,
+        img: img17,
     },
     {
         id: 4,
@@ -68,7 +68,7 @@ const reviews = [
     },
     {
         id: 6,
-        img: img6,
+        img: img21,
     },
     {
         id: 7,
@@ -104,15 +104,15 @@ const reviews = [
     },
     {
         id: 15,
-        img: img15,
+        img: img1,
     },
     {
         id: 16,
-        img: img16,
+        img: img2,
     },
     {
         id: 17,
-        img: img17,
+        img: img3,
     },
     {
         id: 18,
@@ -128,7 +128,7 @@ const reviews = [
     },
     {
         id: 21,
-        img: img21,
+        img: img6,
     },
     {
         id: 22,
@@ -234,11 +234,12 @@ const Reviews = () => {
         return (
             <Box sx={{ bgcolor: '#e4e4e4' }}>
                 <Container
-                    id='id4'
+                    id='id6'
                     maxWidth='xl'
                     sx={{
                         mb: '3rem',
-                        p: '1rem',
+                        pt: '3rem',
+                        pb: '3rem',
                         scrollMarginTop: '80px',
                     }}
                 >

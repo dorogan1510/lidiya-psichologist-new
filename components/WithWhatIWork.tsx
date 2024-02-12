@@ -35,7 +35,6 @@ const WithWhatIWork = () => {
         t.WithWhatIWork.Difficulties.text6,
         t.WithWhatIWork.Difficulties.text7,
         t.WithWhatIWork.Difficulties.text8,
-        t.WithWhatIWork.Difficulties.text9,
     ]
 
     const germanDifficulties = [
@@ -45,7 +44,6 @@ const WithWhatIWork = () => {
         t.WithWhatIWork.Difficulties.text4,
         t.WithWhatIWork.Difficulties.text5,
         t.WithWhatIWork.Difficulties.text6,
-        t.WithWhatIWork.Difficulties.text7,
     ]
 
     const russianPersonalDevelopment = [
@@ -65,6 +63,7 @@ const WithWhatIWork = () => {
         t.WithWhatIWork.PersonalDevelopment.text1,
         t.WithWhatIWork.PersonalDevelopment.text2,
         t.WithWhatIWork.PersonalDevelopment.text3,
+        t.WithWhatIWork.PersonalDevelopment.text4,
     ]
 
     const russianDifficultiesWithOthers = [
@@ -96,7 +95,7 @@ const WithWhatIWork = () => {
         <Container
             maxWidth='xl'
             sx={{ pl: { xs: '1rem', md: '3rem' }, scrollMarginTop: '80px' }}
-            id='id1'
+            id='id3'
         >
             <Typography
                 variant='h4'

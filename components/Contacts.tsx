@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import ru from '../languages/ru'
 import de from '../languages/de'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 const Contacts = () => {
     const router = useRouter()
@@ -33,8 +34,8 @@ const Contacts = () => {
     return (
         <Container
             maxWidth='xl'
-            id='id6'
-            sx={{ mb: '3rem', scrollMarginTop: '80px' }}
+            id='id7'
+            sx={{ pb: '3rem', scrollMarginTop: '80px' }}
         >
             <Typography
                 variant='h4'
@@ -69,6 +70,15 @@ const Contacts = () => {
                         }}
                     >
                         <Typography variant='h6'>{t.Contacts.text1}</Typography>
+                        <Typography variant='h6'>{t.Contacts.text2}</Typography>
+                        <Link
+                            href={'https://www.wery-well.de/'}
+                            target='_blank'
+                        >
+                            <Typography variant='h6' sx={{ color: 'black' }}>
+                                https://www.wery-well.de/
+                            </Typography>
+                        </Link>
                     </Box>
                 </Stack>
 

@@ -62,6 +62,10 @@ const Header = () => {
             id: '#id6',
             link: t.Header.link6,
         },
+        {
+            id: '#id7',
+            link: t.Header.link7,
+        },
     ]
 
     const germanPages = [
@@ -78,12 +82,16 @@ const Header = () => {
             link: t.Header.link3,
         },
         {
-            id: '#id5',
+            id: '#id4',
             link: t.Header.link5,
         },
         {
             id: '#id6',
             link: t.Header.link6,
+        },
+        {
+            id: '#id7',
+            link: t.Header.link7,
         },
     ]
 

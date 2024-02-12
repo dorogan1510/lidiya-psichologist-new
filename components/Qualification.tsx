@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router'
-import RussianQualification from './RussianQualification'
 import GermanQualification from './GermanQualification'
+import RussianQualificationNew from './RussianQualificationNew'
 
 const Qualification = () => {
     const router = useRouter()
     const { locale } = router
 
     if (locale === 'ru') {
-        return <RussianQualification />
+        return <RussianQualificationNew />
     } else {
         return <GermanQualification />
     }

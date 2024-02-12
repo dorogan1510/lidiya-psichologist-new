@@ -19,12 +19,8 @@ const GermanQualification = () => {
     return (
         <>
             <Container
-                id='id6'
-                sx={{
-                    scrollMarginTop: '80px',
-                    margin: '0 auto 3rem',
-                    pt: '3rem',
-                }}
+                id='id5'
+                sx={{ scrollMarginTop: '80px', margin: '0 auto 3rem' }}
                 maxWidth='xl'
             >
                 <Typography
@@ -47,15 +43,39 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '1' }}
                     >
-                        2022-2023
+                        2023 —
                     </Typography>
                     <Typography
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
-                        Fortbildungkurs für Psychologen und Psychotherapeuten.
-                        „Majak II, III“. Projekt von Aglaja Dateshidye.
-                        SanktPetersburg
+                        Обучающая программа для психологов и психотерапевтов
+                        «Маяк III». Уровни развития и типы организации личности,
+                        психиатрия для психологов, суицидальное поведение.
+                        Проект Аглаи Датешидзе. Санкт-Петербург.
+                    </Typography>
+                </Stack>
+                <Stack
+                    sx={{
+                        marginBottom: '1.5rem',
+                        flexDirection: { xs: 'column', md: 'row' },
+                        gap: { xs: '0.5rem', md: '1rem' },
+                        alignItems: { xs: 'flex-start', md: 'left' },
+                    }}
+                >
+                    <Typography
+                        variant='h6'
+                        sx={{ fontWeight: '500', flex: '1' }}
+                    >
+                        2022 —
+                    </Typography>
+                    <Typography
+                        variant='h6'
+                        sx={{ fontWeight: '500', flex: '10' }}
+                    >
+                        Обучающая программа для психологов и психотерапевтов по
+                        работе с травмой «Маяк II». Проект Аглаи Датешидзе.
+                        Санкт-Петербург.
                     </Typography>
                 </Stack>
                 <Stack
@@ -76,11 +96,10 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
-                        Fortbildung für Psychotherapeuten „Gestalttherapie für
-                        die Kinder und Familie nach dem Violet
-                        Oaklander-Modell”.Dialog Shool „Intellegentia“,
-                        Stockholm. Information und Consulting Center
-                        „Psychometrics“, SanktPetersburg.
+                        Обучающий проект «Гештальт-подход в работе с детьми и
+                        семьёй по модели Вайолет Оклендер». Dialog Shool
+                        „Intellegentia“, Stockholm. Information und Consulting
+                        Center „Psychometrics“, Санкт-Петербург.
                     </Typography>
                 </Stack>
                 <Stack
@@ -101,8 +120,8 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
-                        Gestaltinstitut Sankt-Petersburg. Abschluß: Diplom-
-                        Psychologin, Gestalttherapeutin.
+                        Санкт-Петербургский Институт Гештальта. Диплом -
+                        психолог консультант. Гештальт-терапевт
                     </Typography>
                 </Stack>
                 <Stack
@@ -123,8 +142,8 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
-                        Gaststudium an der Ludwig-Maximilians-Universität
-                        München. (Germanistik, Psychologie, Slavistik)
+                        Мюнхенский университет Людвига-Максимилиана. Обучение.
+                        (Германистика, психология, славистика)
                     </Typography>
                 </Stack>
                 <Stack
@@ -145,9 +164,9 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
-                        Germanistikstudium an der Staatlichen Universität
-                        Sankt-Petersburg. Abschluß: Diplim - Germanistin,
-                        Literaturwissenschaftlerin, Deutschlererin.
+                        Санкт-Петербургский государственный университет. Диплом.
+                        Филолог-германист, преподаватель немецкого языка и
+                        литературы.
                     </Typography>
                 </Stack>
             </Container>

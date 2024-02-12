@@ -4,6 +4,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import AutoGraphIcon from '@mui/icons-material/AutoGraph'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
 import SearchIcon from '@mui/icons-material/Search'
+import PeopleIcon from '@mui/icons-material/People'
 import SettingsAccessibilityIcon from '@mui/icons-material/SettingsAccessibility'
 import { useRouter } from 'next/router'
 import de from '../languages/de'
@@ -34,7 +35,7 @@ const Features2 = () => {
 
     return (
         <Container
-            id='id3'
+            id='id2'
             maxWidth='xl'
             sx={{ mb: '3rem', scrollMarginTop: '80px' }}
         >
@@ -75,7 +76,7 @@ const Features2 = () => {
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Box color={'secondary.main'}>
-                        <SearchIcon
+                        <PeopleIcon
                             style={{
                                 width: '30px',
                                 height: '30px',
@@ -112,21 +113,19 @@ const Features2 = () => {
                     </Box>
                     <Typography variant='h6'>{t.HowIWork.text5}</Typography>
                 </Grid>
-                {!lastSectionOnlyGerman && (
-                    <Grid item xs={12} sm={4}>
-                        <Box color={'secondary.main'}>
-                            <PublicIcon
-                                style={{
-                                    width: '30px',
-                                    height: '30px',
-                                    marginBottom: '1rem',
-                                    color: 'primary.main',
-                                }}
-                            />
-                        </Box>
-                        <Typography variant='h6'>{t.HowIWork.text7}</Typography>
-                    </Grid>
-                )}
+                <Grid item xs={12} sm={4} sx={{ mb: '1rem' }}>
+                    <Box color={'secondary.main'}>
+                        <PublicIcon
+                            style={{
+                                width: '30px',
+                                height: '30px',
+                                marginBottom: '1rem',
+                                color: 'primary.main',
+                            }}
+                        />
+                    </Box>
+                    <Typography variant='h6'>{t.HowIWork.text7}</Typography>
+                </Grid>
                 <Grid item xs={12} sm={12}>
                     <Typography
                         variant='h4'
@@ -138,8 +137,15 @@ const Features2 = () => {
                     <Typography
                         variant='h6'
                         sx={{ maxWidth: '1000px', m: '0 auto' }}
+                        gutterBottom
                     >
                         {t.HowIWork.text6}
+                    </Typography>
+                    <Typography
+                        variant='h6'
+                        sx={{ maxWidth: '1000px', m: '0 auto' }}
+                    >
+                        {t.HowIWork.text8}
                     </Typography>
                 </Grid>
             </Grid>

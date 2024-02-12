@@ -31,8 +31,10 @@ const HeroSection = () => {
     }, [locale])
 
     return (
-        <Box sx={{ bgcolor: '#b8d8f3', mb: '3rem' }}>
+        // <Box sx={{ bgcolor: '#b8d8f3', mb: '3rem' }}>
+        <Box sx={{ bgcolor: '#cbd5de', mb: '3rem' }}>
             <Container
+                id='id1'
                 maxWidth='xl'
                 sx={{
                     pl: { xs: '1rem', md: '3rem' },
@@ -55,17 +57,15 @@ const HeroSection = () => {
                     }}
                 >
                     <Box sx={{ maxWidth: '1110px' }}>
-                        {psychologistFullName && (
-                            <Typography
-                                variant='h3'
-                                gutterBottom
-                                sx={{ textAlign: { xs: 'center', md: 'left' } }}
-                            >
-                                {t.HeroSection.psychologistNameFull}
-                            </Typography>
-                        )}
+                        <Typography
+                            variant='h3'
+                            gutterBottom
+                            sx={{ textAlign: { xs: 'center', md: 'left' } }}
+                        >
+                            {t.HeroSection.psychologistNameFull}
+                        </Typography>
 
-                        {!psychologistFullName && (
+                        {/* {!psychologistFullName && (
                             <>
                                 <Typography
                                     variant='h3'
@@ -86,7 +86,7 @@ const HeroSection = () => {
                                     {t.HeroSection.psychologist}
                                 </Typography>
                             </>
-                        )}
+                        )} */}
                         {/* <Typography
                             variant='h3'
                             gutterBottom

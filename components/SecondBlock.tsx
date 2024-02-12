@@ -27,7 +27,7 @@ const SecondBlock = () => {
 
     return (
         <Container maxWidth='xl' sx={{ mb: '3rem' }}>
-            <Typography
+            {/* <Typography
                 variant='h4'
                 gutterBottom
                 sx={{
@@ -37,7 +37,7 @@ const SecondBlock = () => {
                 }}
             >
                 {t.SecondBlock.whatIsPsychology}
-            </Typography>
+            </Typography> */}
 
             <Box
                 sx={{
@@ -47,20 +47,22 @@ const SecondBlock = () => {
                     m: ' 0 auto',
                 }}
             >
-                <Typography variant='h6' gutterBottom>
-                    {t.SecondBlock.text1}
-                </Typography>
-                {!german && (
-                    <Box>
+                <Typography variant='h6'>{t.SecondBlock.text1}</Typography>
+                {german && (
+                    <>
                         <Typography
                             variant='h6'
                             sx={{ display: 'inline-block' }}
                         >
-                            <i>{t.SecondBlock.knowYourself}</i>&nbsp;
-                            {t.SecondBlock.text2} <i>{t.SecondBlock.text3}</i>{' '}
-                            {t.SecondBlock.text4} {t.SecondBlock.text5}
+                            {t.SecondBlock.text2}
                         </Typography>
-                    </Box>
+                        <Typography
+                            variant='h6'
+                            sx={{ display: 'inline-block' }}
+                        >
+                            {t.SecondBlock.text3}
+                        </Typography>
+                    </>
                 )}
             </Box>
         </Container>

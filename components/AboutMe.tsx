@@ -22,14 +22,15 @@ const HeroSectionImageRight = () => {
     return (
         <Box
             sx={{
-                bgcolor: '#cbd5de',
+                bgcolor: '#b8d8f3',
             }}
         >
             <Container
-                id='id2'
+                id='id4'
                 maxWidth='xl'
                 sx={{
-                    mb: '3rem',
+                    pb: '3rem',
+                    // mb: '3rem',
                     pt: '3rem',
                     scrollMarginTop: '60px',
                 }}
@@ -54,11 +55,11 @@ const HeroSectionImageRight = () => {
                         <Typography variant='h6' gutterBottom>
                             {t.AboutMe.aboutMeText1}
                         </Typography>
-                        <Typography variant='h6' sx={{ mb: '1.5rem' }}>
+                        <Typography variant='h6' gutterBottom>
                             {t.AboutMe.aboutMeText2}
                         </Typography>
                     </Box>
-                    <Box
+                    {/* <Box
                         sx={{
                             order: 1,
                             maxWidth: '300px',
@@ -76,7 +77,7 @@ const HeroSectionImageRight = () => {
                                 borderRadius: '20px',
                             }}
                         />
-                    </Box>
+                    </Box> */}
                 </Stack>
             </Container>
         </Box>

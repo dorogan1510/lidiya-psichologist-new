@@ -16,13 +16,13 @@ export default function Home() {
             <HeroSection />
             <SecondBlock />
             <WithWhatIWork />
-            <AboutMe />
             <HowIWork />
+            <AboutMe />
             <Reviews />
             <Qualification />
             <Contacts />
             {/* <Price /> */}
-            <CallToAction />
+            {/* <CallToAction /> */}
         </Box>
     )
 }
