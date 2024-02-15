@@ -22,12 +22,12 @@ const HeroSection = () => {
         }
     })()
 
-    const [psychologistFullName, setpsychologistFullName] = useState<boolean>()
+    const [german, setGerman] = useState<boolean>()
 
     useEffect(() => {
         if (locale === 'de') {
-            setpsychologistFullName(false)
-        } else setpsychologistFullName(true)
+            setGerman(false)
+        } else setGerman(true)
     }, [locale])
 
     return (
@@ -65,7 +65,7 @@ const HeroSection = () => {
                             {t.HeroSection.psychologistNameFull}
                         </Typography>
 
-                        {/* {!psychologistFullName && (
+                        {/* {!german && (
                             <>
                                 <Typography
                                     variant='h3'
@@ -114,7 +114,11 @@ const HeroSection = () => {
                             }}
                         >
                             <Button
-                                href='mailto:mrsla2010@gmail.com'
+                                href={
+                                    german
+                                        ? 'https://forms.gle/ny2ubtSTPeFiQ8eC9'
+                                        : 'https://forms.gle/CnYLCN5ejTzE3avU6'
+                                }
                                 variant='contained'
                                 sx={{ display: 'block' }}
                                 target='_blank'

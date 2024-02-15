@@ -13,6 +13,7 @@ import { handwriteFont } from '../styles/theme'
 import { useRouter } from 'next/router'
 import de from '../languages/de'
 import ru from '../languages/ru'
+import { useState, useEffect } from 'react'
 
 const CallToAction = () => {
     const router = useRouter()
@@ -26,6 +27,14 @@ const CallToAction = () => {
                 return de
         }
     })()
+
+    const [german, setGerman] = useState<boolean>()
+
+    useEffect(() => {
+        if (locale === 'de') {
+            setGerman(false)
+        } else setGerman(true)
+    }, [locale])
 
     return (
         <Box sx={{ bgcolor: '#b8d8f3' }}>
@@ -104,7 +113,11 @@ const CallToAction = () => {
                         }}
                     >
                         <Button
-                            href='mailto:mrsla2010@gmail.com'
+                            href={
+                                german
+                                    ? 'https://forms.gle/ny2ubtSTPeFiQ8eC9'
+                                    : 'https://forms.gle/CnYLCN5ejTzE3avU6'
+                            }
                             variant='contained'
                             sx={{ display: 'block' }}
                             target='_blank'

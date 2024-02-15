@@ -69,13 +69,20 @@ const Contacts = () => {
                                 : { xs: 'center', md: 'left' },
                         }}
                     >
-                        <Typography variant='h6'>{t.Contacts.text1}</Typography>
-                        <Typography variant='h6'>{t.Contacts.text2}</Typography>
+                        <Typography variant='h5' gutterBottom>
+                            {t.Contacts.text1}
+                        </Typography>
+                        <Typography variant='h5' fontWeight={600}>
+                            {t.Contacts.text2}
+                        </Typography>
                         <Link
                             href={'https://www.wery-well.de/'}
                             target='_blank'
                         >
-                            <Typography variant='h6' sx={{ color: 'black' }}>
+                            <Typography
+                                variant='h5'
+                                sx={{ color: 'black', fontWeight: 600 }}
+                            >
                                 https://www.wery-well.de/
                             </Typography>
                         </Link>
