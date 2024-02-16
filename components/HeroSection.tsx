@@ -116,8 +116,8 @@ const HeroSection = () => {
                             <Button
                                 href={
                                     german
-                                        ? 'https://forms.gle/ny2ubtSTPeFiQ8eC9'
-                                        : 'https://forms.gle/CnYLCN5ejTzE3avU6'
+                                        ? 'https://forms.gle/gyasfALuF6EBBprKA'
+                                        : 'https://forms.gle/6JA4JWXsHne115REA'
                                 }
                                 variant='contained'
                                 sx={{ display: 'block' }}
