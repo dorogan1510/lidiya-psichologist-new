@@ -72,7 +72,10 @@ const Contacts = () => {
                         <Typography variant='h5' gutterBottom>
                             {t.Contacts.text1}
                         </Typography>
-                        <Typography variant='h5'>{t.Contacts.text2}</Typography>
+                        <Typography variant='h5'>
+                            {t.Contacts.text2}
+                            <br /> {t.Contacts.text3}
+                        </Typography>
                         <Link
                             href={'https://www.wery-well.de/'}
                             target='_blank'

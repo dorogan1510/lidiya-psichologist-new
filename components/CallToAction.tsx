@@ -42,7 +42,8 @@ const CallToAction = () => {
             <Container maxWidth='xl'>
                 <Stack
                     sx={{
-                        p: { xs: '1.5rem', md: '5rem' },
+                        p: { xs: '1.5rem' },
+                        pb: { md: '5rem' },
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',

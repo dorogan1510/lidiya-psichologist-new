@@ -55,7 +55,7 @@ const GermanQualification = () => {
                     >
                         Fortbildungkurs für Psychologen und Psychotherapeuten.
                         „Majak II, III“. Projekt von Aglaja Dateshidye.
-                        SanktPetersburg
+                        Sankt-Petersburg
                     </Typography>
                 </Stack>
                 <Stack

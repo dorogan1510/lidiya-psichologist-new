@@ -17,15 +17,16 @@ export default {
             'Nach dem Abschluß eröffnete ich meine Privatpraxis. Als Gestalttherapeutin erlebe ich immer wieder, wie Klienten sich zunehmend stabiler, selbstbewusster und glücklicher fühlen. Das ist meine Inspiration und Motivation.',
     },
     CallToAction: {
-        signToConsultation: 'Nachricht schreiben',
+        signToConsultation: 'Sie erreichen mich',
         hardTime: '',
-        button1: 'Fülle das Formular aus',
-        button2: 'Schreiben Sie auf Telegram',
+        button1: 'Nachricht schreiben',
+        button2: 'In Telegram schreiben',
     },
     Contacts: {
         contacts: 'Kontakt',
         text1: 'Online — weltweit',
-        text2: 'Offline finden Sie mich hier — Hamburg, Altona',
+        text2: 'Offline finden Sie mich hier —',
+        text3: 'Hamburg, Altona',
     },
     HeroSection: {
         psychologist: 'Gestalttherapeutin',
