@@ -17,7 +17,7 @@ export default {
             'Nach dem Abschluß eröffnete ich meine Privatpraxis. Als Gestalttherapeutin erlebe ich immer wieder, wie Klienten sich zunehmend stabiler, selbstbewusster und glücklicher fühlen. Das ist meine Inspiration und Motivation.',
     },
     CallToAction: {
-        signToConsultation: 'Sie erreichen mich',
+        signToConsultation: 'Sie erreichen mich hier',
         hardTime: '',
         button1: 'Nachricht schreiben',
         button2: 'In Telegram schreiben',
