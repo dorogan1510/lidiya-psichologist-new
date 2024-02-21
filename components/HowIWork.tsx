@@ -35,7 +35,7 @@ const Features2 = () => {
 
     return (
         <Container
-            id='id2'
+            id='id3'
             maxWidth='xl'
             sx={{ mb: '3rem', scrollMarginTop: '80px' }}
         >

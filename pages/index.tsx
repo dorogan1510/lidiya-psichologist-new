@@ -16,9 +16,9 @@ export default function Home() {
         <Box>
             <HeroSection />
             <SecondBlock />
+            <WithWhatIWork />
             <HowIWork />
             <DirectionOfPsychotherapy />
-            <WithWhatIWork />
             <AboutMe />
             <Qualification />
             <Reviews />

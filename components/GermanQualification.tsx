@@ -80,7 +80,7 @@ const GermanQualification = () => {
                         die Kinder und Familie nach dem Violet
                         Oaklander-Modell”.Dialog Shool „Intellegentia“,
                         Stockholm. Information und Consulting Center
-                        „Psychometrics“, SanktPetersburg.
+                        „Psychometrics“, Sankt-Petersburg.
                     </Typography>
                 </Stack>
                 <Stack
@@ -146,7 +146,7 @@ const GermanQualification = () => {
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
                         Germanistikstudium an der Staatlichen Universität
-                        Sankt-Petersburg. Abschluß: Diplim - Germanistin,
+                        Sankt-Petersburg. Abschluß: Diplim — Germanistin,
                         Literaturwissenschaftlerin, Deutschlererin.
                     </Typography>
                 </Stack>

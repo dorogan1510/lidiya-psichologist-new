@@ -1,4 +1,5 @@
 import TelegramIcon from '@mui/icons-material/Telegram'
+import FeedIcon from '@mui/icons-material/Feed'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import {
     Box,
@@ -49,6 +50,16 @@ const CallToAction = () => {
                 >
                     <Typography
                         variant='h4'
+                        sx={{
+                            textAlign: { xs: 'center', md: 'left' },
+                            marginBottom: '1rem',
+                        }}
+                        className={handwriteFont.className}
+                    >
+                        {t.CallToAction.hardTime}
+                    </Typography>
+                    <Typography
+                        variant='h4'
                         textAlign={'center'}
                         marginBottom={'1.5rem'}
                     >
@@ -93,23 +104,14 @@ const CallToAction = () => {
                         </Typography>
                     </Stack> */}
 
-                    <Typography
-                        variant='h4'
+                    <Stack
                         sx={{
-                            textAlign: { xs: 'center', md: 'left' },
-                            marginBottom: '1.5rem',
-                        }}
-                        className={handwriteFont.className}
-                    >
-                        {t.CallToAction.hardTime}
-                    </Typography>
-                    <Box
-                        sx={{
-                            display: 'flex',
                             justifyContent: {
                                 xs: 'center',
                                 md: 'flex-start',
                             },
+                            gap: '1rem',
+                            flexDirection: { xs: 'column', md: 'row' },
                         }}
                     >
                         <Button
@@ -119,13 +121,22 @@ const CallToAction = () => {
                                     : 'https://forms.gle/6JA4JWXsHne115REA'
                             }
                             variant='contained'
-                            sx={{ display: 'block' }}
                             target='_blank'
                             color='secondary'
+                            startIcon={<FeedIcon />}
                         >
-                            {t.HeroSection.signToSession}
+                            {t.CallToAction.button1}
                         </Button>
-                    </Box>
+                        <Button
+                            href={'https://t.me/MTSLA2010'}
+                            variant='contained'
+                            target='_blank'
+                            color='secondary'
+                            startIcon={<TelegramIcon />}
+                        >
+                            {t.CallToAction.button2}
+                        </Button>
+                    </Stack>
                 </Stack>
             </Container>
         </Box>

@@ -44,6 +44,7 @@ const WithWhatIWork = () => {
         t.WithWhatIWork.Difficulties.text4,
         t.WithWhatIWork.Difficulties.text5,
         t.WithWhatIWork.Difficulties.text6,
+        t.WithWhatIWork.Difficulties.text7,
     ]
 
     const russianPersonalDevelopment = [
@@ -63,7 +64,6 @@ const WithWhatIWork = () => {
         t.WithWhatIWork.PersonalDevelopment.text1,
         t.WithWhatIWork.PersonalDevelopment.text2,
         t.WithWhatIWork.PersonalDevelopment.text3,
-        t.WithWhatIWork.PersonalDevelopment.text4,
     ]
 
     const russianDifficultiesWithOthers = [
@@ -100,7 +100,7 @@ const WithWhatIWork = () => {
                     scrollMarginTop: '80px',
                     py: '3rem',
                 }}
-                id='id3'
+                id='id2'
             >
                 <Typography
                     variant='h4'

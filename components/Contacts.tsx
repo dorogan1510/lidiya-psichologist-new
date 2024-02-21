@@ -72,17 +72,12 @@ const Contacts = () => {
                         <Typography variant='h5' gutterBottom>
                             {t.Contacts.text1}
                         </Typography>
-                        <Typography variant='h5' fontWeight={600}>
-                            {t.Contacts.text2}
-                        </Typography>
+                        <Typography variant='h5'>{t.Contacts.text2}</Typography>
                         <Link
                             href={'https://www.wery-well.de/'}
                             target='_blank'
                         >
-                            <Typography
-                                variant='h5'
-                                sx={{ color: 'black', fontWeight: 600 }}
-                            >
+                            <Typography variant='h5' sx={{ color: 'black' }}>
                                 https://www.wery-well.de/
                             </Typography>
                         </Link>

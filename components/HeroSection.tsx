@@ -1,4 +1,7 @@
-import { Button, Container, Stack, Typography } from '@mui/material'
+import { Button, Container, IconButton, Stack, Typography } from '@mui/material'
+import TelegramIcon from '@mui/icons-material/Telegram'
+import FeedIcon from '@mui/icons-material/Feed'
+
 import { Box } from '@mui/system'
 import Image from 'next/image'
 import img1 from '../public/img/hero_img.png'
@@ -104,13 +107,15 @@ const HeroSection = () => {
                         >
                             {t.HeroSection.importantMeeting}
                         </Typography>
-                        <Box
+                        <Stack
                             sx={{
-                                display: 'flex',
                                 justifyContent: {
                                     xs: 'center',
                                     md: 'flex-start',
                                 },
+                                alignItems: 'center',
+                                flexDirection: { xs: 'column', md: 'row' },
+                                gap: '1rem',
                             }}
                         >
                             <Button
@@ -120,13 +125,22 @@ const HeroSection = () => {
                                         : 'https://forms.gle/6JA4JWXsHne115REA'
                                 }
                                 variant='contained'
-                                sx={{ display: 'block' }}
                                 target='_blank'
                                 color='secondary'
+                                startIcon={<FeedIcon />}
                             >
                                 {t.HeroSection.signToSession}
                             </Button>
-                        </Box>
+                            <Button
+                                href={'https://t.me/MTSLA2010'}
+                                variant='contained'
+                                target='_blank'
+                                color='secondary'
+                                startIcon={<TelegramIcon />}
+                            >
+                                {t.CallToAction.button2}
+                            </Button>
+                        </Stack>
                     </Box>
                     <Box sx={{ maxWidth: '500px' }}>
                         <Image
