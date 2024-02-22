@@ -31,7 +31,7 @@ export default {
     HeroSection: {
         psychologist: 'Gestalttherapeutin',
         psychologistName: 'Lidiia Serdiuk',
-        psychologistNameFull: 'Gestalttherapeutin Serdiuk Lidiia',
+        psychologistNameFull: 'Gestalttherapeutin Lidiia Serdiuk',
         importantMeeting:
             'Die wertvollste Begegnung ist die Begegnung mit sich selbst! ',
         signToSession: 'Nachricht schreiben',
