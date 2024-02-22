@@ -1,4 +1,11 @@
-import { Button, Container, IconButton, Stack, Typography } from '@mui/material'
+import {
+    Button,
+    Container,
+    IconButton,
+    Stack,
+    Typography,
+    useMediaQuery,
+} from '@mui/material'
 import TelegramIcon from '@mui/icons-material/Telegram'
 import FeedIcon from '@mui/icons-material/Feed'
 
@@ -33,6 +40,8 @@ const HeroSection = () => {
         } else setGerman(true)
     }, [locale])
 
+    const matches = useMediaQuery('(min-width:600px)')
+
     return (
         // <Box sx={{ bgcolor: '#b8d8f3', mb: '3rem' }}>
         <Box sx={{ bgcolor: '#cbd5de', mb: '3rem' }}>
@@ -60,25 +69,8 @@ const HeroSection = () => {
                     }}
                 >
                     <Box sx={{ maxWidth: '1110px' }}>
-                        <Typography
-                            variant='h3'
-                            gutterBottom
-                            sx={{ textAlign: { xs: 'center', md: 'left' } }}
-                        >
-                            {t.HeroSection.psychologistNameFull}
-                        </Typography>
-
-                        {/* {!german && (
+                        {!matches ? (
                             <>
-                                <Typography
-                                    variant='h3'
-                                    gutterBottom
-                                    sx={{
-                                        textAlign: { xs: 'center', md: 'left' },
-                                    }}
-                                >
-                                    {t.HeroSection.psychologistName}
-                                </Typography>
                                 <Typography
                                     variant='h3'
                                     gutterBottom
@@ -88,8 +80,25 @@ const HeroSection = () => {
                                 >
                                     {t.HeroSection.psychologist}
                                 </Typography>
+                                <Typography
+                                    variant='h3'
+                                    gutterBottom
+                                    sx={{
+                                        textAlign: { xs: 'center', md: 'left' },
+                                    }}
+                                >
+                                    {t.HeroSection.psychologistName}
+                                </Typography>
                             </>
-                        )} */}
+                        ) : (
+                            <Typography
+                                variant='h3'
+                                gutterBottom
+                                sx={{ textAlign: { xs: 'center', md: 'left' } }}
+                            >
+                                {t.HeroSection.psychologistNameFull}
+                            </Typography>
+                        )}
                         {/* <Typography
                             variant='h3'
                             gutterBottom
