@@ -107,7 +107,7 @@ export default {
         text1: 'Die Psychologie ist überall in unserem Leben. Sie beeinflusst unser Denken, Handeln und wie wir zu uns selbst stehen.',
         knowYourself: '',
         text2: 'Mithilfe der Psychologie können Sie sich selbst kennenlernen und verstehen, warum Sie sich so fühlen, wie Sie sich fühlen. Sie können Ihre Bedürfnisse wahrnehmen, Ihre Ressourcen identifizieren und bestimmen, wie Sie leben möchten. Das ermöglicht Ihnen offen und frei durch Ihr Leben zu gehen und sich bei Herausforderungen stark zu fühlen.',
-        text3: 'Die Psychologi gibt uns den Raum für die wertvollste Begegnung unseres Lebens — ',
+        text3: 'Die Psychologie gibt uns den Raum für die wertvollste Begegnung unseres Lebens — ',
         text6: 'für die Begegnung mit sich selbst!',
         text4: '',
         text5: '',
