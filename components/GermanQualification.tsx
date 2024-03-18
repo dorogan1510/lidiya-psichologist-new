@@ -55,7 +55,7 @@ const GermanQualification = () => {
                     >
                         Fortbildungkurs für Psychologen und Psychotherapeuten.
                         „Majak II, III“. Projekt von Aglaja Dateshidye.
-                        Sankt-Petersburg
+                        Sankt-Petersburg.
                     </Typography>
                 </Stack>
                 <Stack
@@ -147,7 +147,7 @@ const GermanQualification = () => {
                     >
                         Germanistikstudium an der Staatlichen Universität
                         Sankt-Petersburg. Abschluß: Diplim — Germanistin,
-                        Literaturwissenschaftlerin, Deutschlererin.
+                        Literaturwissenschaftlerin, Deutschlehrerin.
                     </Typography>
                 </Stack>
             </Container>
