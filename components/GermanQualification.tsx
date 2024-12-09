@@ -47,13 +47,35 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '1' }}
                     >
+                        2024 —
+                    </Typography>
+                    <Typography
+                        variant='h6'
+                        sx={{ fontWeight: '500', flex: '10' }}
+                    >
+                        Weiterbildung. Systemische Therapie. Wispo AG — das
+                        Systemische Zentrum. Hamburg.
+                    </Typography>
+                </Stack>
+                <Stack
+                    sx={{
+                        marginBottom: '1.5rem',
+                        flexDirection: { xs: 'column', md: 'row' },
+                        gap: { xs: '0.5rem', md: '1rem' },
+                        alignItems: { xs: 'flex-start', md: 'left' },
+                    }}
+                >
+                    <Typography
+                        variant='h6'
+                        sx={{ fontWeight: '500', flex: '1' }}
+                    >
                         2022-2023
                     </Typography>
                     <Typography
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
-                        Fortbildungkurs für Psychologen und Psychotherapeuten.
+                        Fortbildungskurs für Psychologen und Psychotherapeuten.
                         „Majak II, III“. Projekt von Aglaja Dateshidye.
                         Sankt-Petersburg.
                     </Typography>
@@ -101,7 +123,7 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
-                        Gestaltinstitut Sankt-Petersburg. Abschluß: Diplom-
+                        Gestaltinstitut Sankt-Petersburg. Abschluss: Diplom-
                         Psychologin, Gestalttherapeutin.
                     </Typography>
                 </Stack>
@@ -146,7 +168,7 @@ const GermanQualification = () => {
                         sx={{ fontWeight: '500', flex: '10' }}
                     >
                         Germanistikstudium an der Staatlichen Universität
-                        Sankt-Petersburg. Abschluß: Diplim — Germanistin,
+                        Sankt-Petersburg. Abschluss: Diplom — Germanistin,
                         Literaturwissenschaftlerin, Deutschlehrerin.
                     </Typography>
                 </Stack>

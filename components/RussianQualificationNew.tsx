@@ -43,6 +43,28 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '1' }}
                     >
+                        2024 —
+                    </Typography>
+                    <Typography
+                        variant='h6'
+                        sx={{ fontWeight: '500', flex: '10' }}
+                    >
+                        Обучение системной терапии. Wispo — центр системной
+                        терапии и консультирования. Гамбург.
+                    </Typography>
+                </Stack>
+                <Stack
+                    sx={{
+                        marginBottom: '1.5rem',
+                        flexDirection: { xs: 'column', md: 'row' },
+                        gap: { xs: '0.5rem', md: '1rem' },
+                        alignItems: { xs: 'flex-start', md: 'left' },
+                    }}
+                >
+                    <Typography
+                        variant='h6'
+                        sx={{ fontWeight: '500', flex: '1' }}
+                    >
                         2023 —
                     </Typography>
                     <Typography

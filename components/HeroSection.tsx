@@ -11,7 +11,7 @@ import FeedIcon from '@mui/icons-material/Feed'
 
 import { Box } from '@mui/system'
 import Image from 'next/image'
-import img1 from '../public/img/hero_img.png'
+import img1 from '../public/img/hero-img.png'
 import { handwriteFont } from '../styles/theme'
 import style from './HeroSection.module.scss'
 import { useRouter } from 'next/router'
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 maxWidth='xl'
                 sx={{
                     pl: { xs: '1rem', md: '3rem' },
-                    height: { xs: 'auto', md: '600px' },
+                    height: { xs: 'auto', md: '550px' },
                     position: 'relative',
                 }}
             >
