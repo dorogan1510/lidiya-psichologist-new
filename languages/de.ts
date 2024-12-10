@@ -12,9 +12,9 @@ export default {
     AboutMe: {
         aboutMe: 'Über mich',
         aboutMeText1:
-            'Mein Weg zur Psychologie begann mit der Suche nach Möglichkeiten, meine Lebensqualität zu verbessern. Als Diplom-Germanistin habe ich mehrere Jahre als Übersetzerin und Deutschlehrerin gearbeitet. Inspiriert durch eigene positive Erfahrungen mit der Gestalttherapie, begann ich am Gestalt-Institut Sankt-Petersburg mein Psychologiestudium. ',
+            'Mein Weg zur Psychologie begann mit der Suche nach Möglichkeiten, meine  Lebensqualität zu verbessern. Als Diplom-Germanistin habe ich mehrere Jahre als Übersetzerin und Deutschlehrerin gearbeitet. Inspiriert durch meine positiven Erfahrungen mit der Gestalttherapie begann ich mein Psychologiestudium am Gestalt-Institut Sankt Petersburg. Nach meinem Abschluss eröffnete ich meine eigene Privatpraxis.',
         aboutMeText2:
-            'Nach dem Abschluß eröffnete ich meine Privatpraxis. Als Gestalttherapeutin erlebe ich immer wieder, wie Klienten sich zunehmend stabiler, selbstbewusster und glücklicher fühlen. Das ist meine Inspiration und Motivation.',
+            'Als Gestalttherapeutin erlebe ich immer wieder, wie Klient:innen zunehmend stabiler, selbstbewusster und glücklicher werden. Das ist meine Inspiration und Motivation, mich kontinuierlich weiterzuentwickeln. Derzeit vertiefe ich meine Kenntnisse im systemischen Ansatz der Psychotherapie und studiere am Zentrum für Systemische Therapie und Beratung WISPO in Hamburg.',
     },
     CallToAction: {
         signToConsultation: 'Sie erreichen mich hier',

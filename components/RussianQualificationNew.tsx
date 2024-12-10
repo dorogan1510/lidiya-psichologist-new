@@ -65,7 +65,7 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '1' }}
                     >
-                        2023 —
+                        2023
                     </Typography>
                     <Typography
                         variant='h6'
@@ -89,7 +89,7 @@ const GermanQualification = () => {
                         variant='h6'
                         sx={{ fontWeight: '500', flex: '1' }}
                     >
-                        2022 —
+                        2022
                     </Typography>
                     <Typography
                         variant='h6'
