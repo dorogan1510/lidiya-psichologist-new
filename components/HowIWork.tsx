@@ -124,7 +124,7 @@ const Features2 = () => {
                             }}
                         />
                     </Box>
-                    <Typography variant='h6'>{t.HowIWork.text7}</Typography>
+                    <Typography variant='h6'>{t.HowIWork.text6}</Typography>
                 </Grid>
             </Grid>
         </Container>

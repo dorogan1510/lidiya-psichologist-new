@@ -52,18 +52,12 @@ const DirectionOfPsychotherapy = () => {
                     sx={{ maxWidth: '1000px', m: '0 auto' }}
                     gutterBottom
                 >
-                    {t.HowIWork.text6}
-                </Typography>
-                <Typography
-                    variant='h6'
-                    sx={{ maxWidth: '1000px', m: '0 auto' }}
-                    gutterBottom
-                >
                     {t.HowIWork.text7}
                 </Typography>
                 <Typography
                     variant='h6'
                     sx={{ maxWidth: '1000px', m: '0 auto' }}
+                    gutterBottom
                 >
                     {t.HowIWork.text8}
                 </Typography>
@@ -72,6 +66,12 @@ const DirectionOfPsychotherapy = () => {
                     sx={{ maxWidth: '1000px', m: '0 auto' }}
                 >
                     {t.HowIWork.text9}
+                </Typography>
+                <Typography
+                    variant='h6'
+                    sx={{ maxWidth: '1000px', m: '0 auto' }}
+                >
+                    {t.HowIWork.text10}
                 </Typography>
             </Container>
         </Box>
