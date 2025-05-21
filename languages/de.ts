@@ -2,7 +2,7 @@ export default {
     Header: {
         profiru: 'Mein Profil auf profi.ru',
         link1: 'Home',
-        link2: 'Therapie-Themen',
+        link2: 'Womit ich arbeite',
         link3: 'Wie ich arbeite',
         link4: '',
         link5: 'Über mich',
@@ -14,7 +14,7 @@ export default {
         aboutMeText1:
             'Mein Weg zur Psychologie begann mit der Suche nach Möglichkeiten, meine  Lebensqualität zu verbessern. Als Diplom-Germanistin habe ich mehrere Jahre als Übersetzerin und Deutschlehrerin gearbeitet. Inspiriert durch meine positiven Erfahrungen mit der Gestalttherapie begann ich mein Psychologiestudium am Gestalt-Institut Sankt Petersburg. Nach meinem Abschluss eröffnete ich meine eigene Privatpraxis.',
         aboutMeText2:
-            'Als Gestalttherapeutin erlebe ich immer wieder, wie Klient:innen zunehmend stabiler, selbstbewusster und glücklicher werden. Das ist meine Inspiration und Motivation, mich kontinuierlich weiterzuentwickeln. Derzeit vertiefe ich meine Kenntnisse im systemischen Ansatz der Psychotherapie und studiere am Zentrum für Systemische Therapie und Beratung WISPO in Hamburg.',
+            'Als Beraterin erlebe ich immer wieder, wie Klient:innen zunehmend stabiler, selbstbewusster und glücklicher werden. Das ist meine Inspiration und Motivation, mich kontinuierlich weiterzuentwickeln. Derzeit vertiefe ich meine Kenntnisse im systemischen Ansatz der Psychotherapie und studiere am Zentrum für Systemische Therapie und Beratung WISPO in Hamburg.',
     },
     CallToAction: {
         signToConsultation: 'Sie erreichen mich hier',
@@ -29,11 +29,13 @@ export default {
         text3: 'Hamburg, Altona',
     },
     HeroSection: {
-        psychologist: 'Gestalttherapeutin',
+        psychologist: 'Psychologische Beratung Gestalt-Therapie',
         psychologistName: 'Lidia Serdiuk',
-        psychologistNameFull: 'Gestalttherapeutin Lidia Serdiuk',
+        psychologistNameFull: 'Psychologische Beratung Gestalt-Therapie ',
         importantMeeting:
             'Die wertvollste Begegnung ist die Begegnung mit sich selbst! ',
+        LidiaSerdiuk: 'Lidia Serdiuk',
+
         signToSession: 'Nachricht schreiben',
     },
     HowIWork: {
@@ -45,8 +47,8 @@ export default {
         text5: 'Die Dauer einer Psychotherapie hängt von der individuellen Entwicklungszeit und Ihren Zielen ab. Im Erstgespräch werden sowohl Ihre Ziele und Wünsche als auch organisatorische Fragen geklärt. Eine Sitzung dauert 60 Minuten. Blocksitzungen sind möglich.',
         directionOfPsychotherapy: 'Meine psychotherapeutische Richtung',
         text6: 'Als Russin mit ukrainischen Wurzeln, begleite ich Klienten unterschiedlicher Nationalitäten und Weltanschauungen auf ihrem Weg zum inneren Frieden. Sprachen: Deutsch, Russisch',
-        text7: 'In meiner Arbeit stütze ich mich auf die Gestalttherapie – eine humanistische Form der Psychotherapie, die dabei hilft, sich selbst, die eigenen Gefühle und Bedürfnisse besser zu verstehen. Sie lädt dazu ein, sich auf das Hier und Jetzt zu konzentrieren und eine Verbindung zwischen Gedanken, Emotionen und Körper herzustellen.',
-        text8: 'Als Gestalttherapeutin interpretiere oder bewerte ich nicht! Stattdessen begleite ich Sie auf einer Entdeckungsreise zu Ihrem inneren Erleben und unterstütze Sie dabei, Ihren eigenen, einzigartigen „Schlüssel“ zur Lösung Ihrer Anliegen zu finden.',
+        text7: 'In meiner Arbeit stütze ich mich auf die Gestalttherapie – einen humanistischen Ansatz, der Menschen dabei unterstützt, sich selbst, ihre Gefühle und Bedürfnisse besser zu verstehen. Es geht darum, sich auf das Hier und Jetzt zu konzentrieren und eine Verbindung zwischen Gedanken, Emotionen und dem Körper herzustellen. Ich interpretiere und bewerte nicht.',
+        text8: 'Stattdessen begleite ich Sie auf einer Entdeckungsreise zu Ihrem inneren Erleben und unterstütze Sie dabei, Ihren eigenen, einzigartigen „Schlüssel“ zur Lösung Ihrer Anliegen zu finden.',
         text9: 'Dieser therapeutische Ansatz fasziniert mich durch die Vielfalt an Techniken und kreativen Möglichkeiten, die den Prozess lebendig, tiefgehend und besonders wirkungsvoll machen. Durch die Gestalttherapie kommen wir zusammen Ihren Ressourcen, Talenten und Fähigkeiten auf die Spur, um Ihr individuelles Wachstum zu ermöglichen.',
         text10: 'Für mich – und für viele meiner Klient:innen – ist der Gestaltansatz ein Weg zu mehr Harmonie mit sich selbst und zu einem erfüllteren, freieren Leben.',
     },
@@ -115,7 +117,7 @@ export default {
         text5: '',
     },
     WithWhatIWork: {
-        withWhatIWork: 'Häufige Themen in der Therapie',
+        withWhatIWork: 'Häufige Themen in der Beratung',
         Difficulties: {
             difficulties: 'Schwierigkeiten in der Beziehung zu sich selbst:',
             text1: 'Unzufriedenheit mit sich selbst, mit den eigenen Entscheidungen, Handlungen und Konsequenzen',

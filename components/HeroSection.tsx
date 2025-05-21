@@ -80,15 +80,6 @@ const HeroSection = () => {
                                 >
                                     {t.HeroSection.psychologist}
                                 </Typography>
-                                <Typography
-                                    variant='h3'
-                                    gutterBottom
-                                    sx={{
-                                        textAlign: { xs: 'center', md: 'left' },
-                                    }}
-                                >
-                                    {t.HeroSection.psychologistName}
-                                </Typography>
                             </>
                         ) : (
                             <Typography
@@ -115,6 +106,15 @@ const HeroSection = () => {
                             className={handwriteFont.className}
                         >
                             {t.HeroSection.importantMeeting}
+                        </Typography>
+                        <Typography
+                            variant='h3'
+                            sx={{
+                                mb: '3rem',
+                                textAlign: { xs: 'center', md: 'left' },
+                            }}
+                        >
+                            {t.HeroSection.LidiaSerdiuk}
                         </Typography>
                         <Stack
                             sx={{
