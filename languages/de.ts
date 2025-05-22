@@ -45,11 +45,11 @@ export default {
         text3: 'Während unserer Sitzungen befinden Sie sich in einem sicheren Raum (ob virtuell oder real).  Sie können Ihre Gefühle und Emotionen durchleben, ohne Angst, verurteilt zu werden.',
         text4: 'Ich garantiere Ihnen Vertraulichkeit und Verschwiegenheit in einer sicheren therapeutischen Umgebung.',
         text5: 'Die Dauer einer Psychotherapie hängt von der individuellen Entwicklungszeit und Ihren Zielen ab. Im Erstgespräch werden sowohl Ihre Ziele und Wünsche als auch organisatorische Fragen geklärt. Eine Sitzung dauert 60 Minuten. Blocksitzungen sind möglich.',
-        directionOfPsychotherapy: 'Meine psychotherapeutische Richtung',
+        directionOfPsychotherapy: 'Meine Arbeitsweise Richtung',
         text6: 'Als Russin mit ukrainischen Wurzeln, begleite ich Klienten unterschiedlicher Nationalitäten und Weltanschauungen auf ihrem Weg zum inneren Frieden. Sprachen: Deutsch, Russisch',
         text7: 'In meiner Arbeit stütze ich mich auf die Gestalttherapie – einen humanistischen Ansatz, der Menschen dabei unterstützt, sich selbst, ihre Gefühle und Bedürfnisse besser zu verstehen. Es geht darum, sich auf das Hier und Jetzt zu konzentrieren und eine Verbindung zwischen Gedanken, Emotionen und dem Körper herzustellen. Ich interpretiere und bewerte nicht.',
         text8: 'Stattdessen begleite ich Sie auf einer Entdeckungsreise zu Ihrem inneren Erleben und unterstütze Sie dabei, Ihren eigenen, einzigartigen „Schlüssel“ zur Lösung Ihrer Anliegen zu finden.',
-        text9: 'Dieser therapeutische Ansatz fasziniert mich durch die Vielfalt an Techniken und kreativen Möglichkeiten, die den Prozess lebendig, tiefgehend und besonders wirkungsvoll machen. Durch die Gestalttherapie kommen wir zusammen Ihren Ressourcen, Talenten und Fähigkeiten auf die Spur, um Ihr individuelles Wachstum zu ermöglichen.',
+        text9: 'Dieser Ansatz fasziniert mich durch die Vielfalt an Techniken und kreativen Möglichkeiten, die den Prozess lebendig, tiefgehend und besonders wirkungsvoll machen. Durch die Gestalttherapie kommen wir zusammen Ihren Ressourcen, Talenten und Fähigkeiten auf die Spur, um Ihr individuelles Wachstum zu ermöglichen.',
         text10: 'Für mich – und für viele meiner Klient:innen – ist der Gestaltansatz ein Weg zu mehr Harmonie mit sich selbst und zu einem erfüllteren, freieren Leben.',
     },
     Price: {
