@@ -32,7 +32,7 @@ export default {
         psychologist: 'Psychologische Beratung Gestalt-Therapie',
         psychologistName: 'Lidia Serdiuk',
         psychologistNameFull: 'Psychologische Beratung',
-        psychologistNameFull2: 'Gestalt-Therapie',
+        psychologistNameFull2: 'GestaltTherapie',
         importantMeeting:
             'Die wertvollste Begegnung ist die Begegnung mit sich selbst! ',
         importantMeeting2: 'keine Heilbehandlung',

@@ -66,6 +66,10 @@ const HeroSection = () => {
                         bottom: 0,
                         left: 0,
                         right: 0,
+                        alignItems: {
+                            xs: 'center',
+                            md: locale === 'de' ? 'flex-end' : 'center',
+                        },
                     }}
                 >
                     <Box sx={{ maxWidth: '1110px' }}>
@@ -79,6 +83,15 @@ const HeroSection = () => {
                                     }}
                                 >
                                     {t.HeroSection.psychologist}
+                                </Typography>
+                                <Typography
+                                    variant='h3'
+                                    gutterBottom
+                                    sx={{
+                                        textAlign: { xs: 'center', md: 'left' },
+                                    }}
+                                >
+                                    {t.HeroSection.psychologistName}
                                 </Typography>
                             </>
                         ) : (
@@ -111,7 +124,7 @@ const HeroSection = () => {
                             Психолог <br className={style.brTag} /> Лидия Сердюк
                         </Typography> */}
                         <Typography
-                            variant='h5'
+                            variant='h6'
                             sx={{
                                 mb: '3rem',
                                 textAlign: { xs: 'center', md: 'left' },
@@ -123,7 +136,7 @@ const HeroSection = () => {
                         <Typography
                             variant='h4'
                             sx={{
-                                mb: '3rem',
+                                mb: '2rem',
                                 textAlign: { xs: 'center', md: 'left' },
                             }}
                             className={handwriteFont.className}
@@ -133,7 +146,7 @@ const HeroSection = () => {
                         <Typography
                             variant='h3'
                             sx={{
-                                mb: '3rem',
+                                mb: '2rem',
                                 textAlign: { xs: 'center', md: 'left' },
                             }}
                         >
