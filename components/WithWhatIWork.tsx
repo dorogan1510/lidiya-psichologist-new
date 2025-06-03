@@ -40,7 +40,7 @@ const WithWhatIWork = () => {
     const germanDifficulties = [
         t.WithWhatIWork.Difficulties.text1,
         t.WithWhatIWork.Difficulties.text2,
-        t.WithWhatIWork.Difficulties.text3,
+        // t.WithWhatIWork.Difficulties.text3,
         t.WithWhatIWork.Difficulties.text4,
         t.WithWhatIWork.Difficulties.text5,
         t.WithWhatIWork.Difficulties.text6,

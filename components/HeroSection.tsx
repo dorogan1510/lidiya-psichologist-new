@@ -57,7 +57,7 @@ const HeroSection = () => {
                 <Stack
                     flexDirection={{ xs: 'column', md: 'row' }}
                     justifyContent='center'
-                    alignItems='center'
+                    alignItems={locale === 'de' ? 'flex-end' : 'center'}
                     gap='1rem'
                     sx={{
                         pt: { xs: '3rem', md: '0' },
@@ -82,13 +82,26 @@ const HeroSection = () => {
                                 </Typography>
                             </>
                         ) : (
-                            <Typography
-                                variant='h3'
-                                gutterBottom
-                                sx={{ textAlign: { xs: 'center', md: 'left' } }}
-                            >
-                                {t.HeroSection.psychologistNameFull}
-                            </Typography>
+                            <Box>
+                                <Typography
+                                    variant='h3'
+                                    gutterBottom
+                                    sx={{
+                                        textAlign: { xs: 'center', md: 'left' },
+                                    }}
+                                >
+                                    {t.HeroSection.psychologistNameFull}
+                                </Typography>
+                                <Typography
+                                    variant='h3'
+                                    gutterBottom
+                                    sx={{
+                                        textAlign: { xs: 'center', md: 'left' },
+                                    }}
+                                >
+                                    {t.HeroSection.psychologistNameFull2}
+                                </Typography>
+                            </Box>
                         )}
                         {/* <Typography
                             variant='h3'
@@ -97,6 +110,16 @@ const HeroSection = () => {
                         >
                             Психолог <br className={style.brTag} /> Лидия Сердюк
                         </Typography> */}
+                        <Typography
+                            variant='h5'
+                            sx={{
+                                mb: '3rem',
+                                textAlign: { xs: 'center', md: 'left' },
+                            }}
+                            className={handwriteFont.className}
+                        >
+                            {t.HeroSection.importantMeeting2}
+                        </Typography>
                         <Typography
                             variant='h4'
                             sx={{
@@ -125,6 +148,7 @@ const HeroSection = () => {
                                 alignItems: 'center',
                                 flexDirection: { xs: 'column', md: 'row' },
                                 gap: '1rem',
+                                mb: 6,
                             }}
                         >
                             <Button
