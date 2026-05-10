@@ -178,7 +178,7 @@ const HeroSection = () => {
                                 {t.HeroSection.signToSession}
                             </Button>
                             <Button
-                                href={'https://t.me/MTSLA2010'}
+                                href={'https://t.me/lidiaserdiuk'}
                                 variant='contained'
                                 target='_blank'
                                 color='secondary'
